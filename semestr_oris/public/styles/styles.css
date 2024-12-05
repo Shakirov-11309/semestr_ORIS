@@ -1,0 +1,146 @@
+.menu{
+    display: flex;
+    padding: 1vw 4vw;
+}
+
+body{
+    background-color: #111113;
+    font-family: CirceRegular, sans-serif;
+    color: #fff;
+}
+
+.search-icon{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.img-logo{
+    margin-right: 5vw;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.navbar-items{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-item1{
+    line-height: 20px;
+    font-size: 18px;
+}
+
+.navbar-item{
+    margin-left: 35px;
+    line-height: 20px;
+    font-size: 18px;
+}
+
+.btn1{
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    background: rgba(86, 92, 103, .4);
+    color: #fff;
+    border:  2px solid transparent;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 190px;
+    height: 43px;
+    align-items: center;
+    justify-content: center;
+    font-family: CirceRegular, sans-serif;
+}
+
+.btn2{
+    left: 2px;
+    padding: 0 34px 0 24px;
+    border-radius: 8px 0 0 8px;
+    position: relative;
+    display: flex;
+    background: rgba(86, 92, 103, .4);
+    color: #fff;
+    border:  2px solid transparent;
+    cursor: pointer;
+    margin-right: 25px;
+    font-size: 18px;
+    width: 110px;
+    height: 43px;
+    align-items: center;
+    justify-content: center;
+    font-family: CirceRegular, sans-serif;
+}
+
+.btn3{
+    right: 10px;
+    position: relative;
+    display: flex;
+    background: #feba2b;
+    color: #111113;
+    border:  2px solid transparent;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 190px;
+    height: 43px;
+    align-items: center;
+    justify-content: center;
+    font-family: CirceRegular, sans-serif;
+}
+
+h1{
+    font-family: CirceLight, sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.cataloge-header{
+    display: flex;
+}
+
+.cataloge-view{
+    margin-top: 16px;
+    font-family: ProximaNovaRegular, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #565c67;
+}
+
+.cataloge{
+    display: inline-block;
+    padding: 50px 60px 60px;
+}
+
+.main-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+
+
+
