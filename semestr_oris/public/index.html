@@ -13,7 +13,7 @@
         <div class="navbar-items">
             <img src="images/logo-amediateka.png" class="img-logo">
             <a href="https://www.amediateka.ru/series" class="navbar-item-1">Сериалы</a>
-            <a href="index.html" class="navbar-item">Фильмы</a>
+            <a href="index.html" class="navbar-item" style="color: #feba2b;">Фильмы</a>
             <a href="https://www.amediateka.ru/kino1tv" class="navbar-item">Кино1ТВ</a>
             <a href="https://www.amediateka.ru/collections" class="navbar-item">Коллекции</a>
             <a href="https://www.amediateka.ru/tv" class="navbar-item">Эфир</a>
@@ -24,7 +24,9 @@
         </div>
         <div class="navbar-items">
             <button class="btn-1">Ввести промокод</button>
-            <button class="btn-2" style="margin-right: 0">Войти</button>
+            <button type="button" class="btn-2" style="margin-right: 0">
+                <a target="_blank" href="login.html">Войти</a>
+            </button>
             <button class="btn-3">Попробовать за 1₽</button>
         </div>
     </div>
@@ -63,55 +65,46 @@
                 Все студии
                 <img src="images/button-close.png" style="height: 16px; width: 16px" class="filter-image">
             </button>
+
         </div>
         <script>
             document.querySelector('.filter-left').addEventListener('click', function(event) {
-                if (event.target.classList.contains('filter-item-1')) {
-                    const img = event.target.querySelector('.filter-image');
-                    img.src = img.src.includes('button-close') ? 'images/button-open.png' : 'images/button-close.png';
-                }
-                else if (event.target.classList.contains('filter-item-2')) {
-                    const img = event.target.querySelector('.filter-image');
-                    img.src = img.src.includes('button-close') ? 'images/button-open.png' : 'images/button-close.png';
-                }
-                else if (event.target.classList.contains('filter-item-3')) {
+                if (event.target.classList.contains('filter-item')) {
                     const img = event.target.querySelector('.filter-image');
                     img.src = img.src.includes('button-close') ? 'images/button-open.png' : 'images/button-close.png';
                 }
             });
         </script>
-        <!--
-       <div style="display: flex; overflow: hidden">
-           <ul class="filter-insert-category" style="overflow: hidden">
-               <li>Все жанры</li>
-               <li>Документальный</li>
-               <li>Мелодрама</li>
-               <li>Фантастика</li>
-               <li>Стендап</li>
-               <li>Анимация</li>
-               <li>Драма</li>
-               <li>Музыка</li>
-               <li>Фильмы HBO</li>
-               <li>Вестерн</li>
-               <li>Биография</li>
-               <li>Исторический</li>
-               <li>Спорт</li>
-               <li>Фэнтези</li>
-               <li>Короткий метр</li>
-               <li>Военный</li>
-               <li>Комедия</li>
-               <li>Триллер</li>
-               <li>Шоу</li>
-               <li>Детектив</li>
-               <li>Криминал</li>
-               <li>Ужас</li>
-               <li>Семейный</li>
-           </ul>
-       </div>
-        -->
+    </div>
+    <div style="">
+        <ul class="filter-insert-category" style="overflow: hidden">
+            <li>Все жанры</li>
+            <li>Документальный</li>
+            <li>Мелодрама</li>
+            <li>Фантастика</li>
+            <li>Стендап</li>
+            <li>Анимация</li>
+            <li>Драма</li>
+            <li>Музыка</li>
+            <li>Фильмы HBO</li>
+            <li>Вестерн</li>
+            <li>Биография</li>
+            <li>Исторический</li>
+            <li>Спорт</li>
+            <li>Фэнтези</li>
+            <li>Короткий метр</li>
+            <li>Военный</li>
+            <li>Комедия</li>
+            <li>Триллер</li>
+            <li>Шоу</li>
+            <li>Детектив</li>
+            <li>Криминал</li>
+            <li>Ужас</li>
+            <li>Семейный</li>
+        </ul>
     </div>
     <div class="wrapper-cataloge">
-        <a class="item-cataloge">
+        <a class="item-cataloge" href="page.html">
             <div class="card-item-wrapper">
                 <picture class="item-img-template">
                     <img  class="img-template" src="images/film1.JPG">
@@ -152,7 +145,7 @@
                             <img src="images/play-button.svg" style="height: 16px; width: 16px; margin-right: calc(10px/1.08)">
                             Смотреть
                         </button>
-                        <button class="button-in-card-add">
+                        <button type="button" class="button-in-card-add">
                             <img src="images/add-button.svg" style="height: 16px; width: 16px; margin-right: calc(10px/1.08)">
                             В избранное
                         </button>
@@ -160,7 +153,7 @@
                 </div>
             </div>
         </a>
-        <a class="item-cataloge">
+        <a class="item-cataloge" href="page.html">
             <div class="card-item-wrapper">
                 <picture class="item-img-template">
                     <img  class="img-template" src="images/film1.JPG">
@@ -201,7 +194,7 @@
                             <img src="images/play-button.svg" style="height: 16px; width: 16px; margin-right: calc(10px/1.08)">
                             Смотреть
                         </button>
-                        <button class="button-in-card-add">
+                        <button type="button" class="button-in-card-add">
                             <img src="images/add-button.svg" style="height: 16px; width: 16px; margin-right: calc(10px/1.08)">
                             В избранное
                         </button>
@@ -209,7 +202,7 @@
                 </div>
             </div>
         </a>
-        <a class="item-cataloge">
+        <a class="item-cataloge" href="page.html">
             <div class="card-item-wrapper">
                 <picture class="item-img-template">
                     <img  class="img-template" src="images/film1.JPG">
@@ -250,7 +243,7 @@
                             <img src="images/play-button.svg" style="height: 16px; width: 16px; margin-right: calc(10px/1.08)">
                             Смотреть
                         </button>
-                        <button class="button-in-card-add">
+                        <button type="button" class="button-in-card-add">
                             <img src="images/add-button.svg" style="height: 16px; width: 16px; margin-right: calc(10px/1.08)">
                             В избранное
                         </button>
@@ -258,7 +251,7 @@
                 </div>
             </div>
         </a>
-        <a class="item-cataloge">
+        <a class="item-cataloge" href="page.html">
             <div class="card-item-wrapper">
                 <picture class="item-img-template">
                     <img  class="img-template" src="images/film1.JPG">
@@ -299,7 +292,7 @@
                             <img src="images/play-button.svg" style="height: 16px; width: 16px; margin-right: calc(10px/1.08)">
                             Смотреть
                         </button>
-                        <button class="button-in-card-add">
+                        <button type="button" class="button-in-card-add">
                             <img src="images/add-button.svg" style="height: 16px; width: 16px; margin-right: calc(10px/1.08)">
                             В избранное
                         </button>
@@ -307,7 +300,7 @@
                 </div>
             </div>
         </a>
-        <a class="item-cataloge">
+        <a class="item-cataloge" href="page.html">
             <div class="card-item-wrapper">
                 <picture class="item-img-template">
                     <img  class="img-template" src="images/film1.JPG">
@@ -348,7 +341,7 @@
                             <img src="images/play-button.svg" style="height: 16px; width: 16px; margin-right: calc(10px/1.08)">
                             Смотреть
                         </button>
-                        <button class="button-in-card-add">
+                        <button type="button" class="button-in-card-add">
                             <img src="images/add-button.svg" style="height: 16px; width: 16px; margin-right: calc(10px/1.08)">
                             В избранное
                         </button>
@@ -356,7 +349,7 @@
                 </div>
             </div>
         </a>
-        <a class="item-cataloge">
+        <a class="item-cataloge" href="page.html">
             <div class="card-item-wrapper">
                 <picture class="item-img-template">
                     <img  class="img-template" src="images/film1.JPG">
@@ -397,7 +390,7 @@
                             <img src="images/play-button.svg" style="height: 16px; width: 16px; margin-right: calc(10px/1.08)">
                             Смотреть
                         </button>
-                        <button class="button-in-card-add">
+                        <button type="button" class="button-in-card-add">
                             <img src="images/add-button.svg" style="height: 16px; width: 16px; margin-right: calc(10px/1.08)">
                             В избранное
                         </button>
@@ -405,7 +398,7 @@
                 </div>
             </div>
         </a>
-        <a class="item-cataloge">
+        <a class="item-cataloge" href="page.html">
             <div class="card-item-wrapper">
                 <picture class="item-img-template">
                     <img  class="img-template" src="images/film1.JPG">
@@ -446,7 +439,7 @@
                             <img src="images/play-button.svg" style="height: 16px; width: 16px; margin-right: calc(10px/1.08)">
                             Смотреть
                         </button>
-                        <button class="button-in-card-add">
+                        <button type="button" class="button-in-card-add">
                             <img src="images/add-button.svg" style="height: 16px; width: 16px; margin-right: calc(10px/1.08)">
                             В избранное
                         </button>
@@ -454,7 +447,7 @@
                 </div>
             </div>
         </a>
-        <a class="item-cataloge">
+        <a class="item-cataloge" href="page.html">
             <div class="card-item-wrapper">
                 <picture class="item-img-template">
                     <img  class="img-template" src="images/film1.JPG">
@@ -495,7 +488,7 @@
                             <img src="images/play-button.svg" style="height: 16px; width: 16px; margin-right: calc(10px/1.08)">
                             Смотреть
                         </button>
-                        <button class="button-in-card-add">
+                        <button type="button" class="button-in-card-add">
                             <img src="images/add-button.svg" style="height: 16px; width: 16px; margin-right: calc(10px/1.08)">
                             В избранное
                         </button>
@@ -547,7 +540,18 @@
                 </a>
             </div>
             <div class="menu-socials">
-
+                <a class="menu-socials-item" href="https://t.me/amediatekatv">
+                  <img src="images/telegram-logo-hover.png" class="menu-socials-item-logo-1">
+                </a>
+                <a class="menu-socials-item" href="https://vk.com/amediateka">
+                    <img src="images/vk-logo.png" class="menu-socials-item-logo-2">
+                </a>
+                <a class="menu-socials-item" href="https://youtube.com/user/Amediapremium">
+                    <img src="images/youtube-logo.png" class="menu-socials-item-logo-3">
+                </a>
+                <a class="menu-socials-item" href="https://zen.yandex.ru/amediateka">
+                    <img src="images/dzen-logo.png">
+                </a>
             </div>
         </div>
         <div class="support-feedback">
@@ -556,6 +560,8 @@
         </div>
     </div>
     <div class="footer-copyright">
+        <a style="color: #565c67;">Ⓒ &nbsp;2024 ООО «А&nbsp;сериал», все права защищены. Ⓒ 2024 Home Box Office, Inc. Все права защищены.</a>
+        <a style="color: #565c67;">&nbsp;HBO®, а также все относящиеся к нему логотипы и знаки обслуживания, являются собственностью Home Box Office, Inc.</a>
     </div>
 </footer>
 </body>
