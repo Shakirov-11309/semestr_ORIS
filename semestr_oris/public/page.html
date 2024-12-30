@@ -32,15 +32,20 @@
     <div class="MovieWrapper">
         <picture class="MovieBGPicture">
             <img src="images/backgroundImageFilm.jpg">
-            ::after
         </picture>
         <div class="MovieWrapper-leftShadow"></div>
         <div class="MovieWrapper-bgHeader">
             <div class="MovieWrapper-breadcrumps">
-                <a>Главная/Фильмы/Фэнтези/Моя соседка-призрак</a>
+                <a class="choice-category">Главная</a>
+                <a style="margin: 0 2px; color:#868fa0; cursor: default;">/</a>
+                <a class="choice-category" href="index.html">Фильмы</a>
+                <a style="margin: 0 2px; color:#868fa0; cursor: default;">/</a>
+                <a class="choice-category" href="films/fantasy">Фэнтези</a>
+                <a style="margin: 0 2px; color:#868fa0; cursor: default;">/</a>
+                <a class="selected-category">Моя соседка-призрак</a>
             </div>
             <div class="MovieWrapper-logo">
-                <img src="images/logo-film1.png" style="height:250px; width: 320px">
+                <img src="images/logo-film1.png" style="height: 200px; width: 275px">
             </div>
             <div class="MovieWrapper-Tittle">
                 <div class="MovieWrapper-Original-Tittle">Girl Haunts Boy</div>
@@ -76,12 +81,190 @@
             </div>
         </div>
         <div class="Movie_description">
-
+            <div class="Movie_descriptionData">
+                <div class="descriptionHeader">
+                    <div class="descriptionRating">
+                        <div class="descriptionRating_amediateka">
+                            <img src="images/amediateka-rating.svg">
+                            <span class="rating-numbers">6.9</span>
+                        </div>
+                        <div class="descriptionRating_imdb">
+                            <img src="images/imdb-rating.svg">
+                            <span class="rating-numbers">6.3</span>
+                        </div>
+                    </div>
+                    <div class="descriptionHeader_dataFilm">
+                        <div class="data-item">2024</div>
+                        <div class="data-item">18+</div>
+                        <div class="data-item">Фэнтези</div>
+                    </div>
+                </div>
+                <div class="descriptionInfo">
+                    <div class="info-movie">
+                        <span>
+                            Проникновенная история паранормальной любви, не знающей границ между мирами.
+                            По сюжету фильма «Моя соседка – призрак» подросток по имени Коул (Майкл Чимино, «С любовью, Виктор»)
+                            переезжает в новую квартиру и встречает духа девушки из 1920-х годов по имени Беа (Пейтон Лист, «Помни меня»,
+                            «Сплетница»). Она застряла в лимбе из-за магического кольца, которое надела перед тем, как неожиданно погибнуть
+                            в аварии. Коул давно перестал петь и радоваться жизни из-за утраты отца, и Беа напомнила ему о силе воспоминаний
+                            и ценности жизни в моменте. Это очень нежная и трогательная история о том, как важно двигаться вперед, испытывая
+                            новые чувства и эмоции. Главному герою предстоит понять, что значит смириться с горем, балансируя между прошлым
+                            и настоящим.
+                        </span>
+                    </div>
+                    <div class="info-team">
+                        <div class="info-team-column-tittle">
+                            Режиссеры:
+                            <span class="info-team-column-data">Эмили Тин</span>
+                        </div>
+                        <div class="info-team-column-tittle">
+                            В ролях:
+                            <span class="info-team-column-data">Пейтон Лист, Майкл Чимино, Фиби Холден</span>
+                        </div>
+                        <div class="info-team-column-tittle">
+                            Страна:
+                            <span class="info-team-column-data">США</span>
+                        </div>
+                        <div class="info-team-column-tittle">
+                            Жанры:
+                            <span class="info-team-column-data">Фэнтези, Комедия, Мелодрама</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Movies-Recommendations">
+            <div class="Movie-SlideBar-Tittle">
+                <h2>
+                    Вам Понравится
+                </h2>
+            </div>
+            <div class="Slide">
+                <div class="Movies-SlideBar-Container">
+                    <div class="Movies-SlideBar-Wrapper" style="transform: translateX(0px)">
+                        <div class="SlideBar-Item">
+                            <a href="#" style="margin-bottom: 12px">
+                                <div class="Movie-CardItem-ImageWrapper">
+                                    <div class="Movie-CardItem-PG">
+                                        <span>18+</span>
+                                    </div>
+                                    <img src="images/film1.JPG" class="SlideBar-Img">
+                                </div>
+                            </a>
+                            <a>
+                                <span class="SlideBar-Tittle">Сигма бой</span>
+                            </a>
+                        </div>
+                        <div class="SlideBar-Item" style="margin-left: 12px">
+                            <a href="#" style="margin-bottom: 12px">
+                                <div class="Movie-CardItem-ImageWrapper">
+                                    <div class="Movie-CardItem-PG">
+                                        <span>18+</span>
+                                    </div>
+                                    <img src="images/film1.JPG" class="SlideBar-Img">
+                                </div>
+                            </a>
+                            <a>
+                                <span class="SlideBar-Tittle">Сигма бой</span>
+                            </a>
+                        </div>
+                        <div class="SlideBar-Item" style="margin-left: 12px">
+                            <a href="#" style="margin-bottom: 12px">
+                                <div class="Movie-CardItem-ImageWrapper">
+                                    <div class="Movie-CardItem-PG">
+                                        <span>18+</span>
+                                    </div>
+                                    <img src="images/film1.JPG" class="SlideBar-Img">
+                                </div>
+                            </a>
+                            <a>
+                                <span class="SlideBar-Tittle">Сигма бой</span>
+                            </a>
+                        </div>
+                        <div class="SlideBar-Item" style="margin-left: 12px">
+                            <a href="#" style="margin-bottom: 12px">
+                                <div class="Movie-CardItem-ImageWrapper">
+                                    <div class="Movie-CardItem-PG">
+                                        <span>18+</span>
+                                    </div>
+                                    <img src="images/film1.JPG" class="SlideBar-Img">
+                                </div>
+                            </a>
+                            <a>
+                                <span class="SlideBar-Tittle">Сигма бой</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </main>
 <footer>
-
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="images/logo-amediateka.png">
+        </div>
+        <div class="menu-footer">
+            <div class="menu-category">
+                <a class="menu-category-item" href="index.html">Фильмы</a>
+                <a class="menu-category-item" href="https://www.amediateka.ru/series">Сериалы</a>
+                <a class="menu-category-item" href="https://www.amediateka.ru/kino1tv">Кино1ТВ</a>
+                <a class="menu-category-item" href="https://www.amediateka.ru/collections">Коллекция</a>
+                <a class="menu-category-item" href="https://www.amediateka.ru/trailers">Трейлеры</a>
+                <a class="menu-category-item" href="https://www.amediateka.ru/tv">Эфир</a>
+                <a class="menu-category-item" href="https://www.amediateka.ru/search">Поиск</a>
+                <a class="menu-category-item" href="https://blog.amediateka.ru/">Блог</a>
+            </div>
+            <div class="menu-feedback">
+                <a class="menu-feedback-item">Пользовательское соглашение</a>
+                <a class="menu-feedback-item">FAQ</a>
+                <a class="menu-feedback-item">Контакты</a>
+                <a class="menu-feedback-item">Поддержка</a>
+                <a class="menu-feedback-item">Партнерская программа</a>
+                <a class="menu-feedback-item">В Амедиятеке применяются рекомендательные технологии</a>
+            </div>
+            <div class="menu-app">
+                <a class="menu-app-item" href="https://apps.apple.com/ru/app/amediateka/id695094274">
+                    <img src="images/app-store.svg">
+                </a>
+                <a class="menu-app-item" href="https://play.google.com/store/apps/details?id=com.amdteka">
+                    <img src="images/google-play.svg">
+                </a>
+                <a class="menu-app-item" href="https://appgallery.cloud.huawei.com/ag/n/app/C102822551?channelId=Амедиатека&amp;id=0911bc09f53c463db55a45e2abeeee1f&amp;s=AD3F8FD5F80BD810FA8051B5F02914AA87781634F733D4054BBA629662D0F924&amp;detailType=0&amp;v=">
+                    <img src="images/app-gallery.svg">
+                </a>
+                <a class="menu-app-item" href="https://apps.rustore.ru/app/com.amdteka">
+                    <img src="images/ruStore.svg">
+                </a>
+                <a class="menu-app-item" href="https://www.amediateka.ru/big-screen">
+                    <img src="images/smartTV.svg">
+                </a>
+            </div>
+            <div class="menu-socials">
+                <a class="menu-socials-item" href="https://t.me/amediatekatv">
+                    <img src="images/telegram-logo-hover.png" class="menu-socials-item-logo-1">
+                </a>
+                <a class="menu-socials-item" href="https://vk.com/amediateka">
+                    <img src="images/vk-logo.png" class="menu-socials-item-logo-2">
+                </a>
+                <a class="menu-socials-item" href="https://youtube.com/user/Amediapremium">
+                    <img src="images/youtube-logo.png" class="menu-socials-item-logo-3">
+                </a>
+                <a class="menu-socials-item" href="https://zen.yandex.ru/amediateka">
+                    <img src="images/dzen-logo.png">
+                </a>
+            </div>
+        </div>
+        <div class="support-feedback">
+            <a class="support-item">Поддержка</a>
+            <a class="support-item-mail">help@amediateka.ru</a>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <a style="color: #565c67;">Ⓒ &nbsp;2024 ООО «А&nbsp;сериал», все права защищены. Ⓒ 2024 Home Box Office, Inc. Все права защищены.</a>
+        <a style="color: #565c67;">&nbsp;HBO®, а также все относящиеся к нему логотипы и знаки обслуживания, являются собственностью Home Box Office, Inc.</a>
+    </div>
 </footer>
 </body>
 </html>

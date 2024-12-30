@@ -34,8 +34,9 @@
 <main class="main-container">
     <div class="cataloge">
         <div class="cataloge-header">
-            <a>Главная /</a>
-            <a> Фильмы</a>
+            <a class="choice-category">Главная</a>
+            <a style="margin: 0 2px; color:#565c67; cursor: default;">/</a>
+            <a class="selected-category" style="cursor: default">Фильмы</a>
         </div>
         <h1>Фильмы онлайн</h1>
         <div class="cataloge-view">
@@ -68,39 +69,192 @@
 
         </div>
         <script>
-            document.querySelector('.filter-left').addEventListener('click', function(event) {
-                if (event.target.classList.contains('filter-item')) {
+            const filterLeft = document.querySelector('.filter-left');
+            let activeButton = null;
+            filterLeft.addEventListener('click', function(event) {
+                const clickedButtonId = event.target.id;
+                if(activeButton && activeButton !== clickedButtonId) return;
+
+                if (clickedButtonId === 'button-click-1' || clickedButtonId === 'button-click-2' || clickedButtonId === 'button-click-3') {
                     const img = event.target.querySelector('.filter-image');
-                    img.src = img.src.includes('button-close') ? 'images/button-open.png' : 'images/button-close.png';
+                    const filterId = clickedButtonId.replace('button-click', 'filter')
+
+                    if(img.src.includes('button-close')){
+                        img.src = 'images/button-open.png';
+                        document.getElementById(filterId).style.visibility = "visible";
+                        activeButton = clickedButtonId;
+                        disableOtherButtons(clickedButtonId)
+                    }
+                    else{
+                        img.src = 'images/button-close.png';
+                        document.getElementById(filterId).style.visibility = "hidden";
+                        activeButton = null;
+                        enableOtherButtons(clickedButtonId);
+                    }
                 }
             });
+
+            function disableOtherButtons(activeButtonId) {
+                const validIds = ['button-click-1', 'button-click-2', 'button-click-3'];
+                validIds.forEach(id => {
+                    if (id !== activeButtonId) {
+                        document.getElementById(id).disabled = true;
+                    }
+                });
+            }
+
+            function enableOtherButtons(activeButtonId) {
+                const validIds = ['button-click-1', 'button-click-2', 'button-click-3'];
+                validIds.forEach(id => {
+                    if (id !== activeButtonId) {
+                        document.getElementById(id).disabled = false;
+                    }
+                });
+            }
         </script>
     </div>
-    <div style="">
-        <ul class="filter-insert-category" style="overflow: hidden">
-            <li>Все жанры</li>
-            <li>Документальный</li>
-            <li>Мелодрама</li>
-            <li>Фантастика</li>
-            <li>Стендап</li>
-            <li>Анимация</li>
-            <li>Драма</li>
-            <li>Музыка</li>
-            <li>Фильмы HBO</li>
-            <li>Вестерн</li>
-            <li>Биография</li>
-            <li>Исторический</li>
-            <li>Спорт</li>
-            <li>Фэнтези</li>
-            <li>Короткий метр</li>
-            <li>Военный</li>
-            <li>Комедия</li>
-            <li>Триллер</li>
-            <li>Шоу</li>
-            <li>Детектив</li>
-            <li>Криминал</li>
-            <li>Ужас</li>
-            <li>Семейный</li>
+    <div class="Filter-Choices">
+        <ul class="filter-insert-category" id="filter-1">
+            <li class="item-list">
+                <a class="item-insert-list" style="color: #feba2b">Все жанры</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Документальный</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Мелодрама</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Фантастика</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Стендап</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Анимация</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Драма</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Музыка</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Фильмы HBO</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Вестерн</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Биография</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Исторический</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Спорт</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Фэнтези</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Короткий метр</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Военный</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Комедия</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Триллер</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Шоу</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Детектив</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Криминал</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Ужас</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Семейный</a>
+            </li>
+        </ul>
+    </div>
+    <div class="Filter-Choices">
+        <ul class="filter-insert-category" id="filter-2">
+            <li class="item-list">
+                <a class="item-insert-list" style="color: #feba2b">Все страны</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">США</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Россия</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Великобритания</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Германия</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Нидерланды</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Япония</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Пакистан</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Австралия</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Канада</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Мексика</a>
+            </li>
+        </ul>
+    </div>
+    <div class="Filter-Choices">
+        <ul class="filter-insert-category" id="filter-3">
+            <li class="item-list">
+                <a class="item-insert-list" style="color: #feba2b">Все студии</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">HBO</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">AMC</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">fifth Season</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Warner Bros. Television</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Cinemax</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Starz</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">TRO</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">Евгения Щербакова</a>
+            </li>
+            <li class="item-list">
+                <a class="item-insert-list">BBC</a>
+            </li>
         </ul>
     </div>
     <div class="wrapper-cataloge">

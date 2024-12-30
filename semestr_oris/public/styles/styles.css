@@ -177,6 +177,20 @@ h5{
     margin-bottom: 20px;
 }
 
+.selected-category{
+    color: #565c67;
+}
+
+.choice-category{
+    display: flex;
+    margin-right: 5px;
+    color: #868fa0;
+}
+
+.choice-category:hover{
+    color: #aaa;
+}
+
 .cataloge-view{
     margin-top: 16px;
     font-family: ProximaNovaRegular, sans-serif;
@@ -349,32 +363,55 @@ h5{
     cursor: pointer;
 }
 
-.filter-item:active, .filter-insert-category{
-    visibility: visible;
-}
-
 ul{
     display: flex;
     flex-wrap: wrap;
     position: absolute;
 }
 
+.filter-item:active > .filter-insert-category{
+    display: none;
+    visibility: hidden;
+    height: 0;
+}
+
 .filter-insert-category{
     visibility: hidden;
+    grid-auto-rows: max-content;
     z-index: 999;
     position: absolute;
-    background: green;
+    background: linear-gradient(to bottom, rgba(17, 17, 19, 0.96), rgba(31, 33, 37, 0.96));
     margin-top: 0;
     padding: 30px 60px 10px;
     width: 1280px;
     display: grid;
-    grid-template-columns: repeat(2, 224px);
+    grid-template-columns: repeat(6, 200px);
     grid-column-gap: 24px;
-    grid-auto-rows: auto;
+    backdrop-filter: blur(10px);
 }
 
-li{
-    position: relative;
+.item-list{
+    border-radius: 8px;
+    margin-bottom: 12px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.item-list:hover{
+    background: rgba(86,92,103,.16);
+}
+
+.item-insert-list{
+    padding: 8px 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    line-height: 24px;
+    color: inherit;
+    transition: background-color .2s ease-in-out;
+    cursor: pointer;
+    opacity: .8;
 }
 
 
