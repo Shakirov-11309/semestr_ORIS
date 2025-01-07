@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_ORIS\\semestr_oris\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_oris\\semestr_oris\\myhtttpserver\\templates\\pages\\login1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\templates\\pages\\login1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_oris\\semestr_oris\\myhtttpserver\\templates\\pages\\auth\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\templates\\pages\\auth\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_oris\\semestr_oris\\myhtttpserver\\endponts\\authendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\endponts\\authendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_oris\\semestr_oris\\myhtttpserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_oris\\semestr_oris\\myhtttpserver\\endponts\\dashboarendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\endponts\\dashboarendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_oris\\semestr_oris\\myhtttpserver\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Program.cs",
+              "RelativeDocumentMoniker": "MyHtttpServer\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Program.cs",
+              "RelativeToolTip": "MyHtttpServer\\Program.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T15:28:44.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DashboarEndpoint.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\DashboarEndpoint.cs",
+              "RelativeDocumentMoniker": "MyHtttpServer\\Endponts\\DashboarEndpoint.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\DashboarEndpoint.cs",
+              "RelativeToolTip": "MyHtttpServer\\Endponts\\DashboarEndpoint.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T15:26:05.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "login1.html",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Templates\\Pages\\login1.html",
+              "RelativeDocumentMoniker": "MyHtttpServer\\Templates\\Pages\\login1.html",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Templates\\Pages\\login1.html",
+              "RelativeToolTip": "MyHtttpServer\\Templates\\Pages\\login1.html",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-07T15:24:14.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthEndpoint.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\AuthEndpoint.cs",
+              "RelativeDocumentMoniker": "MyHtttpServer\\Endponts\\AuthEndpoint.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\AuthEndpoint.cs",
+              "RelativeToolTip": "MyHtttpServer\\Endponts\\AuthEndpoint.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwA8AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T15:19:54.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "login.html",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Templates\\Pages\\Auth\\login.html",
+              "RelativeDocumentMoniker": "MyHtttpServer\\Templates\\Pages\\Auth\\login.html",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Templates\\Pages\\Auth\\login.html",
+              "RelativeToolTip": "MyHtttpServer\\Templates\\Pages\\Auth\\login.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-07T15:16:49.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Models\\User.cs",
+              "RelativeDocumentMoniker": "MyHtttpServer\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Models\\User.cs",
+              "RelativeToolTip": "MyHtttpServer\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T21:00:20.996Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
