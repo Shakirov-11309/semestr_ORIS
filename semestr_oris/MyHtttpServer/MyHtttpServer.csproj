@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\HttpServerLibrary\HttpServerLibrary.csproj" />
     <ProjectReference Include="..\MyORMLibrary\MyORMLibrary.csproj" />
+    <ProjectReference Include="..\TemplateEngine\TemplateEngine.csproj" />
   </ItemGroup>
 
 	<ItemGroup>

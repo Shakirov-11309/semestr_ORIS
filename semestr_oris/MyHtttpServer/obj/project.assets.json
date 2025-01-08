@@ -146,6 +146,19 @@
         "runtime": {
           "bin/placeholder/MyORMLibrary.dll": {}
         }
+      },
+      "TemplateEngine/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Moq": "4.20.72"
+        },
+        "compile": {
+          "bin/placeholder/TemplateEngine.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TemplateEngine.dll": {}
+        }
       }
     }
   },
@@ -327,6 +340,11 @@
       "type": "project",
       "path": "../MyORMLibrary/MyORMLibrary.csproj",
       "msbuildProject": "../MyORMLibrary/MyORMLibrary.csproj"
+    },
+    "TemplateEngine/1.0.0": {
+      "type": "project",
+      "path": "../TemplateEngine/TemplateEngine.csproj",
+      "msbuildProject": "../TemplateEngine/TemplateEngine.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -334,23 +352,29 @@
       "HttpServerLibrary >= 1.0.0",
       "Moq >= 4.20.72",
       "MyORMLibrary >= 1.0.0",
-      "System.Data.SqlClient >= 4.9.0"
+      "System.Data.SqlClient >= 4.9.0",
+      "TemplateEngine >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hum\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hum\\Desktop\\pr\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\MyHtttpServer.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Новая папка\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\MyHtttpServer.csproj",
       "projectName": "MyHtttpServer",
-      "projectPath": "C:\\Users\\hum\\Desktop\\pr\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\MyHtttpServer.csproj",
-      "packagesPath": "C:\\Users\\hum\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hum\\Desktop\\pr\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\obj\\",
+      "projectPath": "C:\\Users\\User\\Desktop\\Новая папка\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\MyHtttpServer.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Новая папка\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\hum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -365,11 +389,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\hum\\Desktop\\pr\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\HttpServerLibrary.csproj": {
-              "projectPath": "C:\\Users\\hum\\Desktop\\pr\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\HttpServerLibrary.csproj"
+            "C:\\Users\\User\\Desktop\\Новая папка\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\HttpServerLibrary.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\Новая папка\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\HttpServerLibrary.csproj"
             },
-            "C:\\Users\\hum\\Desktop\\pr\\semestr_ORIS\\semestr_oris\\MyORMLibrary\\MyORMLibrary.csproj": {
-              "projectPath": "C:\\Users\\hum\\Desktop\\pr\\semestr_ORIS\\semestr_oris\\MyORMLibrary\\MyORMLibrary.csproj"
+            "C:\\Users\\User\\Desktop\\Новая папка\\almostReady\\semestr_ORIS\\semestr_oris\\MyORMLibrary\\MyORMLibrary.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\Новая папка\\almostReady\\semestr_ORIS\\semestr_oris\\MyORMLibrary\\MyORMLibrary.csproj"
+            },
+            "C:\\Users\\User\\Desktop\\Новая папка\\almostReady\\semestr_ORIS\\semestr_oris\\TemplateEngine\\TemplateEngine.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\Новая папка\\almostReady\\semestr_ORIS\\semestr_oris\\TemplateEngine\\TemplateEngine.csproj"
             }
           }
         }
@@ -414,7 +441,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

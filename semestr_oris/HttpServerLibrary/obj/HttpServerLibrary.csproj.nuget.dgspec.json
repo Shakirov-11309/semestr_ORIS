@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hum\\Desktop\\pr\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\HttpServerLibrary.csproj": {}
+    "C:\\Users\\User\\Desktop\\Новая папка\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\HttpServerLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hum\\Desktop\\pr\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\HttpServerLibrary.csproj": {
+    "C:\\Users\\User\\Desktop\\Новая папка\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\HttpServerLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hum\\Desktop\\pr\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\HttpServerLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Новая папка\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\HttpServerLibrary.csproj",
         "projectName": "HttpServerLibrary",
-        "projectPath": "C:\\Users\\hum\\Desktop\\pr\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\HttpServerLibrary.csproj",
-        "packagesPath": "C:\\Users\\hum\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hum\\Desktop\\pr\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\Новая папка\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\HttpServerLibrary.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Новая папка\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\hum\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

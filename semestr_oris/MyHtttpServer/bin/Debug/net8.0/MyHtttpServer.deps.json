@@ -11,7 +11,8 @@
           "HttpServerLibrary": "1.0.0",
           "Moq": "4.20.72",
           "MyORMLibrary": "1.0.0",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Data.SqlClient": "4.9.0",
+          "TemplateEngine": "1.0.0"
         },
         "runtime": {
           "MyHtttpServer.dll": {}
@@ -125,10 +126,7 @@
           "Moq": "4.20.72"
         },
         "runtime": {
-          "HttpServerLibrary.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "HttpServerLibrary.dll": {}
         }
       },
       "MyORMLibrary/1.0.0": {
@@ -137,10 +135,15 @@
           "System.Data.SqlClient": "4.9.0"
         },
         "runtime": {
-          "MyORMLibrary.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "MyORMLibrary.dll": {}
+        }
+      },
+      "TemplateEngine/1.0.0": {
+        "dependencies": {
+          "Moq": "4.20.72"
+        },
+        "runtime": {
+          "TemplateEngine.dll": {}
         }
       }
     }
@@ -213,6 +216,11 @@
       "sha512": ""
     },
     "MyORMLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TemplateEngine/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

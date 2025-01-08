@@ -95,6 +95,26 @@ public class ORMContext<T> where T : class, new()
         return entity;
     }
 
+    public List<string> GetPosterUrl() 
+    {
+        var result = new List<string>();
+        string query = "SELECT poster_url FROM movies";
+        using (var command = _dbConnection.CreateCommand()) 
+        {
+            command.CommandText = query;
+            _dbConnection.Open();
+            using (var reader = command.ExecuteReader()) 
+            {
+                while (reader.Read()) 
+                {
+                    result.Add(reader.GetString(0));
+                }
+            }
+            _dbConnection.Close();
+        }
+        return result;
+    }
+
 
     public T CheckUserByData(string email)
     {
