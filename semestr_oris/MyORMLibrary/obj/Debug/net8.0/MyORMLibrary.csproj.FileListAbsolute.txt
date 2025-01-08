@@ -35,3 +35,16 @@ C:\Users\User\Desktop\Новая папка\semestr_ORIS\semestr_oris\MyORMLibra
 C:\Users\User\Desktop\Новая папка\semestr_ORIS\semestr_oris\MyORMLibrary\obj\Debug\net8.0\refint\MyORMLibrary.dll
 C:\Users\User\Desktop\Новая папка\semestr_ORIS\semestr_oris\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.pdb
 C:\Users\User\Desktop\Новая папка\semestr_ORIS\semestr_oris\MyORMLibrary\obj\Debug\net8.0\ref\MyORMLibrary.dll
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\MyORMLibrary\bin\Debug\net8.0\MyORMLibrary.deps.json
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\MyORMLibrary\bin\Debug\net8.0\MyORMLibrary.dll
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\MyORMLibrary\bin\Debug\net8.0\MyORMLibrary.pdb
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.csproj.AssemblyReference.cache
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.AssemblyInfoInputs.cache
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.AssemblyInfo.cs
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.csproj.CoreCompileInputs.cache
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.sourcelink.json
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.dll
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\MyORMLibrary\obj\Debug\net8.0\refint\MyORMLibrary.dll
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.pdb
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\MyORMLibrary\obj\Debug\net8.0\ref\MyORMLibrary.dll

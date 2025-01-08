@@ -84,6 +84,7 @@ namespace HttpServerLibrary
                 ".jpeg" => "image/jpeg",
                 ".png" => "image/png",
                 ".gif" => "image/gif",
+                ".svg" => "image/svg+xml",
                 _ => "application/octet-stream",
             };
         }

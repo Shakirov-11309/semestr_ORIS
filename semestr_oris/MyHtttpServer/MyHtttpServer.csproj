@@ -14,12 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="public\public\.idea\modules.xml" />
-    <Content Include="public\public\.idea\vcs.xml" />
-    <Content Include="public\public\.idea\workspace.xml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Moq" Version="4.20.72" />
     <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
   </ItemGroup>
@@ -36,126 +30,118 @@
 	</ItemGroup>
 
   <ItemGroup>
-    <None Include="public\public\.idea\.gitignore" />
-    <None Include="public\public\.idea\public.iml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Templates\Pages\images\add-button.svg">
+    <None Update="public\images\add-button.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\amediateka-rating.svg">
+    <None Update="public\images\amediateka-rating.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\app-gallery.svg">
+    <None Update="public\images\app-gallery.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\app-store.svg">
+    <None Update="public\images\app-store.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\background-site.png">
+    <None Update="public\images\background-site.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\background-siteMobile.png">
+    <None Update="public\images\background-siteMobile.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\button-close-auth.svg">
+    <None Update="public\images\button-close-auth.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\button-close.png">
+    <None Update="public\images\button-close.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\button-dislike.svg">
+    <None Update="public\images\button-dislike.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\button-like.svg">
+    <None Update="public\images\button-like.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\button-open.png">
+    <None Update="public\images\button-open.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\dzen-logo.png">
+    <None Update="public\images\dzen-logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\google-play.svg">
+    <None Update="public\images\google-play.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\icon-profile.jpg">
+    <None Update="public\images\icon-profile.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\imdb-rating.svg">
+    <None Update="public\images\imdb-rating.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\logo-amediateka.png">
+    <None Update="public\images\logo-amediateka.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\logo.png">
+    <None Update="public\images\logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\play-button.svg">
+    <None Update="public\images\play-button.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\right.svg">
+    <None Update="public\images\right.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\ruStore.svg">
+    <None Update="public\images\ruStore.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\search-icon.png">
+    <None Update="public\images\search-icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\smartTV.svg">
+    <None Update="public\images\smartTV.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\telegram-logo-hover.png">
+    <None Update="public\images\telegram-logo-hover.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\telegram-logo.png">
+    <None Update="public\images\telegram-logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\unnamed.png">
+    <None Update="public\images\unnamed.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\vk-logo-hover.jpg">
+    <None Update="public\images\vk-logo-hover.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\vk-logo-hover.png">
+    <None Update="public\images\vk-logo-hover.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\vk-logo.png">
+    <None Update="public\images\vk-logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\youtube-logo-hover.png">
+    <None Update="public\images\youtube-logo-hover.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\images\youtube-logo.png">
+    <None Update="public\images\youtube-logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\login1.html">
+    <None Update="Templates\Pages\Auth\login1.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\Auth\login.html">
+    <None Update="public\scripts\scrtipt.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="public\styles\styleAdmin.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="public\styles\styleAuth.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="public\styles\stylePage.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="public\styles\styles.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Templates\Pages\Dashboard\index.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\scripts\scrtipt.js">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Templates\Pages\styles\styleAdmin.css">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Templates\Pages\styles\styleAuth.css">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Templates\Pages\styles\stylePage.css">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Templates\Pages\styles\styles.css">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Templates\Pages\UserProfile\profile.html">
+    <None Update="Templates\Pages\FilmPage\page.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

@@ -35,3 +35,16 @@ C:\Users\User\Desktop\Новая папка\semestr_ORIS\semestr_oris\HttpServer
 C:\Users\User\Desktop\Новая папка\semestr_ORIS\semestr_oris\HttpServerLibrary\obj\Debug\net8.0\refint\HttpServerLibrary.dll
 C:\Users\User\Desktop\Новая папка\semestr_ORIS\semestr_oris\HttpServerLibrary\obj\Debug\net8.0\HttpServerLibrary.pdb
 C:\Users\User\Desktop\Новая папка\semestr_ORIS\semestr_oris\HttpServerLibrary\obj\Debug\net8.0\ref\HttpServerLibrary.dll
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\HttpServerLibrary\bin\Debug\net8.0\HttpServerLibrary.deps.json
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\HttpServerLibrary\bin\Debug\net8.0\HttpServerLibrary.dll
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\HttpServerLibrary\bin\Debug\net8.0\HttpServerLibrary.pdb
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\HttpServerLibrary\obj\Debug\net8.0\HttpServerLibrary.csproj.AssemblyReference.cache
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\HttpServerLibrary\obj\Debug\net8.0\HttpServerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\HttpServerLibrary\obj\Debug\net8.0\HttpServerLibrary.AssemblyInfoInputs.cache
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\HttpServerLibrary\obj\Debug\net8.0\HttpServerLibrary.AssemblyInfo.cs
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\HttpServerLibrary\obj\Debug\net8.0\HttpServerLibrary.csproj.CoreCompileInputs.cache
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\HttpServerLibrary\obj\Debug\net8.0\HttpServerLibrary.sourcelink.json
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\HttpServerLibrary\obj\Debug\net8.0\HttpServerLibrary.dll
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\HttpServerLibrary\obj\Debug\net8.0\refint\HttpServerLibrary.dll
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\HttpServerLibrary\obj\Debug\net8.0\HttpServerLibrary.pdb
+C:\Users\hum\Desktop\pr\semestr_ORIS\semestr_oris\HttpServerLibrary\obj\Debug\net8.0\ref\HttpServerLibrary.dll

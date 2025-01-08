@@ -13,7 +13,7 @@ namespace MyHtttpServer.Endponts
         [Get("login")]
         public IHttpResponseResult GetLogin()
         {
-            var file = File.ReadAllText(@"Templates/Pages/login1.html");
+            var file = File.ReadAllText(@"Templates/Pages/Auth/login1.html");
             if (IsAuthorized(Context)) return Redirect("dashboard");
             return Html(file);
         }

@@ -13,7 +13,7 @@ namespace MyHtttpServer.Endponts
         [Get("dashboard")]
         public IHttpResponseResult GetPage() 
         {
-            if (!IsAuthorized(Context)) return Redirect("login");
+            //if (!IsAuthorized(Context)) return Redirect("login");
             var file = File.ReadAllText(@"Templates/Pages/Dashboard/index.html");
             return Html(file);
         }

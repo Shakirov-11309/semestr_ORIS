@@ -1143,24 +1143,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\hum\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Новая папка\\semestr_ORIS\\semestr_oris\\TemplateEngineUnitTests\\TemplateEngineUnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\hum\\Desktop\\pr\\semestr_ORIS\\semestr_oris\\TemplateEngineUnitTests\\TemplateEngineUnitTests.csproj",
       "projectName": "TemplateEngineUnitTests",
-      "projectPath": "C:\\Users\\User\\Desktop\\Новая папка\\semestr_ORIS\\semestr_oris\\TemplateEngineUnitTests\\TemplateEngineUnitTests.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Новая папка\\semestr_ORIS\\semestr_oris\\TemplateEngineUnitTests\\obj\\",
+      "projectPath": "C:\\Users\\hum\\Desktop\\pr\\semestr_ORIS\\semestr_oris\\TemplateEngineUnitTests\\TemplateEngineUnitTests.csproj",
+      "packagesPath": "C:\\Users\\hum\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hum\\Desktop\\pr\\semestr_ORIS\\semestr_oris\\TemplateEngineUnitTests\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\hum\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1175,8 +1170,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\User\\Desktop\\Новая папка\\semestr_ORIS\\semestr_oris\\TemplateEngine\\TemplateEngine.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\Новая папка\\semestr_ORIS\\semestr_oris\\TemplateEngine\\TemplateEngine.csproj"
+            "C:\\Users\\hum\\Desktop\\pr\\semestr_ORIS\\semestr_oris\\TemplateEngine\\TemplateEngine.csproj": {
+              "projectPath": "C:\\Users\\hum\\Desktop\\pr\\semestr_ORIS\\semestr_oris\\TemplateEngine\\TemplateEngine.csproj"
             }
           }
         }
@@ -1233,7 +1228,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
