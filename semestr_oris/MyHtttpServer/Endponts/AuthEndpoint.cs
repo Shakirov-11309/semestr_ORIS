@@ -13,8 +13,8 @@ namespace MyHtttpServer.Endponts
         [Get("login")]
         public IHttpResponseResult GetLogin()
         {
-            var file = File.ReadAllText(@"Templates/Pages/Auth/login1.html");
-            if (IsAuthorized(Context)) return Redirect("dashboard");
+            var file = File.ReadAllText(@"Templates/Pages/Auth/login.html");
+            if (IsAuthorized(Context)) return Redirect("movies");
             return Html(file);
         }
 
@@ -22,9 +22,10 @@ namespace MyHtttpServer.Endponts
         public IHttpResponseResult AuthPost(string email, string password)
         {
             string connectionString =
-                @"Server=localhost; Database=testDB; User Id=sa; Password=P@ssw0rd;TrustServerCertificate=true;";
+                @"Server=localhost; Database=filmDB; User Id=sa; Password=P@ssw0rd;TrustServerCertificate=true;";
             var connection = new SqlConnection(connectionString);
             var dBcontext = new ORMContext<User>(connection);
+            Console.WriteLine($"Email:{email} Пароль:{password}");
             var user = dBcontext.FirstOrDefault(u => u.Email == email && u.Password == password);
 
             if (user == null)
@@ -37,7 +38,7 @@ namespace MyHtttpServer.Endponts
             Context.Response.SetCookie(cookie);
             SessionStorage.SaveSession(token, user.Id);
 
-            return Redirect("dashboard");
+            return Redirect("movies");
         }
 
         public bool IsAuthorized(HttpRequestContext context)
@@ -50,7 +51,6 @@ namespace MyHtttpServer.Endponts
             }
 
             return false;
-
         }
     }
 }

@@ -121,7 +121,7 @@
     <None Update="public\images\youtube-logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\Auth\login1.html">
+    <None Update="Templates\Pages\Auth\login.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="public\scripts\scrtipt.js">
@@ -139,7 +139,7 @@
     <None Update="public\styles\styles.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\Pages\Dashboard\index.html">
+    <None Update="Templates\Pages\Movies\index.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Templates\Pages\FilmPage\page.html">

@@ -9,7 +9,8 @@
       "MyORMLibrary/1.0.0": {
         "dependencies": {
           "Moq": "4.20.72",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Data.SqlClient": "4.9.0",
+          "TemplateEngine": "1.0.0"
         },
         "runtime": {
           "MyORMLibrary.dll": {}
@@ -117,6 +118,14 @@
             "fileVersion": "6.0.21.52210"
           }
         }
+      },
+      "TemplateEngine/1.0.0": {
+        "dependencies": {
+          "Moq": "4.20.72"
+        },
+        "runtime": {
+          "TemplateEngine.dll": {}
+        }
       }
     }
   },
@@ -181,6 +190,11 @@
       "sha512": "sha512-lcyUiXTsETK2ALsZrX+nWuHSIQeazhqPphLfaRxzdGaG93+0kELqpgEHtwWOlQe7+jSFnKwaCAgL4kjeZCQJnw==",
       "path": "system.diagnostics.eventlog/6.0.0",
       "hashPath": "system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+    },
+    "TemplateEngine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

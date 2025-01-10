@@ -924,8 +924,6 @@ C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_ori
 C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyHtttpServer\bin\Debug\net8.0\public\styles\styleAuth.css
 C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyHtttpServer\bin\Debug\net8.0\public\styles\stylePage.css
 C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyHtttpServer\bin\Debug\net8.0\public\styles\styles.css
-C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyHtttpServer\bin\Debug\net8.0\Templates\Pages\Auth\login1.html
-C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyHtttpServer\bin\Debug\net8.0\Templates\Pages\Dashboard\index.html
 C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyHtttpServer\bin\Debug\net8.0\Templates\Pages\FilmPage\page.html
 C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyHtttpServer\bin\Debug\net8.0\MyHtttpServer.deps.json
 C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyHtttpServer\bin\Debug\net8.0\MyHtttpServer.runtimeconfig.json
@@ -960,3 +958,5 @@ C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_ori
 C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyHtttpServer\obj\Debug\net8.0\ref\MyHtttpServer.dll
 C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyHtttpServer\bin\Debug\net8.0\TemplateEngine.dll
 C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyHtttpServer\bin\Debug\net8.0\TemplateEngine.pdb
+C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyHtttpServer\bin\Debug\net8.0\Templates\Pages\Movies\index.html
+C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyHtttpServer\bin\Debug\net8.0\Templates\Pages\Auth\login.html

@@ -10,7 +10,9 @@
         "dependencies": {
           "HttpServerLibrary": "1.0.0",
           "Moq": "4.20.72",
-          "System.Data.SqlClient": "4.9.0"
+          "MyORMLibrary": "1.0.0",
+          "System.Data.SqlClient": "4.9.0",
+          "TemplateEngine": "1.0.0"
         },
         "runtime": {
           "MyHtttpServer.dll": {}
@@ -126,6 +128,24 @@
         "runtime": {
           "HttpServerLibrary.dll": {}
         }
+      },
+      "MyORMLibrary/1.0.0": {
+        "dependencies": {
+          "Moq": "4.20.72",
+          "System.Data.SqlClient": "4.9.0",
+          "TemplateEngine": "1.0.0"
+        },
+        "runtime": {
+          "MyORMLibrary.dll": {}
+        }
+      },
+      "TemplateEngine/1.0.0": {
+        "dependencies": {
+          "Moq": "4.20.72"
+        },
+        "runtime": {
+          "TemplateEngine.dll": {}
+        }
       }
     }
   },
@@ -192,6 +212,16 @@
       "hashPath": "system.diagnostics.eventlog.6.0.0.nupkg.sha512"
     },
     "HttpServerLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyORMLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TemplateEngine/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

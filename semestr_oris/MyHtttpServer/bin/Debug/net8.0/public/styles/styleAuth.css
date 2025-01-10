@@ -210,7 +210,7 @@ a{
     left: 12px;
 }
 
-.Auth-button{
+.Auth-button {
     margin-top: 24px;
     margin-bottom: 12px;
     width: 100%;
@@ -230,6 +230,10 @@ a{
     cursor: pointer;
     opacity: .4;
 }
+
+    .Auth-button:hover {
+        opacity: 1;
+    }
 
 .Auth-registration{
     font-size: 14px;

@@ -1,8 +1,11 @@
-﻿using System.Data;
+﻿using Models;
+using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq.Expressions;
 using System.Reflection;
+using TemplateEngine.Models;
 
 namespace MyORMLibrary;
 public class ORMContext<T> where T : class, new()
@@ -51,10 +54,10 @@ public class ORMContext<T> where T : class, new()
 
     public T ReadById(int id)
     {
+        var tableName = typeof(T).Name;
         using (var connection = _dbConnection)
         {
             connection.Open();
-            string tableName = typeof(T).Name;
             string queryRequest = $"SELECT * FROM {tableName} WHERE id = @id";
 
             using (var command = connection.CreateCommand())
@@ -85,14 +88,38 @@ public class ORMContext<T> where T : class, new()
         var entity = new T();
         var properties = typeof(T).GetProperties();
 
-        foreach(var property in properties)
+        foreach (var property in properties)
         {
-            if (!reader.IsDBNull(reader.GetOrdinal(property.Name))) 
+            if (!reader.IsDBNull(reader.GetOrdinal(property.Name)))
             {
                 property.SetValue(entity, reader[property.Name]);
             }
         }
         return entity;
+    }
+    public T ReadByAll<T>() where T : class, new()
+    {
+        var tableName = typeof(T).Name;
+        using (var connection = _dbConnection)
+        {
+            connection.Open();
+            string queryRequest = $"SELECT * FROM {tableName}";
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = queryRequest;
+                _dbConnection.Open();
+                using (var reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        return MapToEntity<T>(reader);
+                    }
+                }
+                _dbConnection.Close();
+            }
+        }
+
+        return null;
     }
 
     public List<string> GetPosterUrl() 
@@ -114,7 +141,6 @@ public class ORMContext<T> where T : class, new()
         }
         return result;
     }
-
 
     public T CheckUserByData(string email)
     {
@@ -139,29 +165,6 @@ public class ORMContext<T> where T : class, new()
                 }
             }
         }
-        return null;
-    }
-
-
-    public T ReadByAll<T>() where T : class, new()
-    {
-        var tableName = typeof(T).Name;
-        using (var connection = _dbConnection)
-        {
-            connection.Open();
-            string queryRequest = $"SELECT * FROM {tableName}";
-            using (var command = connection.CreateCommand())
-            {
-                using (var reader = command.ExecuteReader())
-                {
-                    if (reader.Read())
-                    {
-                        return MapToEntity<T>(reader);
-                    }
-                }
-            }
-        }
-
         return null;
     }
 
@@ -223,7 +226,6 @@ public class ORMContext<T> where T : class, new()
             _dbConnection.Close();
         }
     }
-
 
     public void Delete(int id)
     {
@@ -326,16 +328,6 @@ public class ORMContext<T> where T : class, new()
         return results;
     }
 
-    private Tuple<string, Dictionary<string, object>> BuildQuery<T>(Expression<Func<T, bool>> predicate)
-   {
-        var tableName = typeof(T).Name + "s";
-        var parameters = new Dictionary<string, object>();
-        var whereClause = BuildWhereClause(predicate.Body, parameters);
-
-        var query = $"SELECT TOP 1 * FROM {tableName} {whereClause}";
-        return new Tuple<string, Dictionary<string, object>>(query, parameters);
-   }
-
    private string BuildWhereClause(Expression expression, Dictionary<string, object> parameters)
    {
         if (expression is BinaryExpression binaryExpression)
@@ -417,8 +409,40 @@ public class ORMContext<T> where T : class, new()
     {
         var tableName = typeof(T).Name + "s"; // Имя таблицы, основанное на имени класса
         var whereClause = ParseExpression(predicate.Body);
-        //var limitClause = singleResult ? "LIMIT 1" : string.Empty;
 
         return $"SELECT * FROM {tableName} WHERE {whereClause}".Trim();
+    }
+
+    public List<Movies> GetMovies() 
+    {
+        var result = new List<Movies>();
+        string query = "SELECT id, card_url, poster_url, amediateka_rating, rating, release_year, description_card, title, bg_url FROM movies";
+        using (var command = _dbConnection.CreateCommand()) 
+        {
+            command.CommandText = query;
+            _dbConnection.Open();
+            using(var reader = command.ExecuteReader()) 
+            {
+                while (reader.Read()) 
+                {
+                    var movies = new Movies
+                    {
+                        Id = reader.GetInt32(0),
+                        card_url = reader.GetString(1),
+                        poster_url = reader.GetString(2),
+                        amediateka_rating = reader.GetDouble(3),
+                        rating = reader.GetDouble(4),
+                        release_year = reader.GetInt32(5),
+                        description_card = reader.GetString(6),
+                        title = reader.GetString(7),
+                        bg_url = reader.GetString(8),
+
+                    };
+                    result.Add(movies);
+                }
+            }
+            _dbConnection.Close();
+        }
+        return result;
     }
 }

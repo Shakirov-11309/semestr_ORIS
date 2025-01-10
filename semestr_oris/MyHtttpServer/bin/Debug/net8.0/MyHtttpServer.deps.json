@@ -132,7 +132,8 @@
       "MyORMLibrary/1.0.0": {
         "dependencies": {
           "Moq": "4.20.72",
-          "System.Data.SqlClient": "4.9.0"
+          "System.Data.SqlClient": "4.9.0",
+          "TemplateEngine": "1.0.0"
         },
         "runtime": {
           "MyORMLibrary.dll": {}

@@ -61,3 +61,6 @@ C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_ori
 C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyORMLibrary\obj\Debug\net8.0\refint\MyORMLibrary.dll
 C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyORMLibrary\obj\Debug\net8.0\MyORMLibrary.pdb
 C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyORMLibrary\obj\Debug\net8.0\ref\MyORMLibrary.dll
+C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyORMLibrary\bin\Debug\net8.0\TemplateEngine.dll
+C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyORMLibrary\bin\Debug\net8.0\TemplateEngine.pdb
+C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyORMLibrary\obj\Debug\net8.0\MyORMLib.FCB61E28.Up2Date

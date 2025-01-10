@@ -188,7 +188,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\User\\Desktop\\Новая папка\\almostReady\\semestr_ORIS\\semestr_oris\\TemplateEngine\\TemplateEngine.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Новая папка\\almostReady\\semestr_ORIS\\semestr_oris\\TemplateEngine\\TemplateEngine.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

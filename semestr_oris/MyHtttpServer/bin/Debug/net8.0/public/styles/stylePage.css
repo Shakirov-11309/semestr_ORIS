@@ -100,6 +100,11 @@ a{
     background: #e19900;
 }
 
+.icon-profile-wrapper {
+    border: 2px #feba2b;
+    border-radius: 50%;
+}
+
 .layoutContent{
     display: flex;
     flex-direction: column;
@@ -176,7 +181,7 @@ a{
 }
 
 .MovieWrapper-logo{
-    width: 180px;
+    width: 280px;
     margin-bottom: 5px;
     font-size: 28px;
     line-height: 42px;

@@ -12,7 +12,7 @@
         <div class="navbar-items">
             <img src="images/logo-amediateka.png" class="img-logo">
             <a href="https://www.amediateka.ru/series" class="navbar-item-1">Сериалы</a>
-            <a href="dashboard" class="navbar-item">Фильмы</a>
+            <a href="movies" class="navbar-item">Фильмы</a>
             <a href="https://www.amediateka.ru/kino1tv" class="navbar-item">Кино1ТВ</a>
             <a href="https://www.amediateka.ru/collections" class="navbar-item">Коллекции</a>
             <a href="https://www.amediateka.ru/tv" class="navbar-item">Эфир</a>
@@ -21,34 +21,31 @@
                 <a href="" class="item-loop">Поиск</a>
             </a>
         </div>
-        <div class="navbar-items">
-            <button class="btn-1">Ввести промокод</button>
-            <button class="btn-2" style="margin-right: 0"><a href="authorization.html">Войти</a></button>
-            <button class="btn-3">Попробовать за 1₽</button>
+        <div class="navbar-items"> <button class="btn-1">Ввести промокод</button> <button class="btn-2" style="margin-right: 0"><a href="login">Войти</a></button> <button class="btn-3">Попробовать за 1₽</button>
         </div>
     </div>
 </header>
 <main class="layoutContent">
     <div class="MovieWrapper">
         <picture class="MovieBGPicture">
-            <img src="images/background-films/bg-2.jpg">
+            <img src="{{posterUrl}}">
         </picture>
         <div class="MovieWrapper-leftShadow"></div>
         <div class="MovieWrapper-bgHeader">
             <div class="MovieWrapper-breadcrumps">
                 <a class="choice-category">Главная</a>
                 <a style="margin: 0 2px; color:#868fa0; cursor: default;">/</a>
-                <a class="choice-category" href="dashboard">Фильмы</a>
+                <a class="choice-category" href="movies">Фильмы</a>
                 <a style="margin: 0 2px; color:#868fa0; cursor: default;">/</a>
                 <a class="choice-category" href="films/fantasy">Фэнтези</a>
                 <a style="margin: 0 2px; color:#868fa0; cursor: default;">/</a>
-                <a class="selected-category">Моя соседка-призрак</a>
+                <a class="selected-category">{{Title}}</a>
             </div>
-            <div class="MovieWrapper-logo">
-                <img src="images/logo-films/logo-2.png" style="height: 200px; width: 275px">
+            <div class="c">
+                <img src="{{Logo}}">
             </div>
             <div class="MovieWrapper-Tittle">
-                <div class="MovieWrapper-Original-Tittle">Girl Haunts Boy</div>
+                <div class="MovieWrapper-Original-Tittle">{{Title}}</div>
             </div>
         </div>
     </div>
@@ -77,7 +74,7 @@
                 </div>
             </div>
             <div class="MovieWrapper_Tittle">
-                <h2>Моя соседка - призрак</h2>
+                <h2> {{Title}} </h2>
             </div>
         </div>
         <div class="Movie_description">
@@ -86,40 +83,33 @@
                     <div class="descriptionRating">
                         <div class="descriptionRating_amediateka">
                             <img src="images/amediateka-rating.svg">
-                            <span class="rating-numbers">6.9</span>
+                            <span class="rating-numbers">{{amediatekaRating}}</span>
                         </div>
                         <div class="descriptionRating_imdb">
                             <img src="images/imdb-rating.svg">
-                            <span class="rating-numbers">6.3</span>
+                            <span class="rating-numbers">{{imdbRating}}</span>
                         </div>
                     </div>
                     <div class="descriptionHeader_dataFilm">
-                        <div class="data-item">2024</div>
-                        <div class="data-item">18+</div>
+                        <div class="data-item">{{Year}}</div>
+                        <div class="data-item">{{Rating}}+</div>
                         <div class="data-item">Фэнтези</div>
                     </div>
                 </div>
                 <div class="descriptionInfo">
                     <div class="info-movie">
                         <span>
-                            Проникновенная история паранормальной любви, не знающей границ между мирами.
-                            По сюжету фильма «Моя соседка – призрак» подросток по имени Коул (Майкл Чимино, «С любовью, Виктор»)
-                            переезжает в новую квартиру и встречает духа девушки из 1920-х годов по имени Беа (Пейтон Лист, «Помни меня»,
-                            «Сплетница»). Она застряла в лимбе из-за магического кольца, которое надела перед тем, как неожиданно погибнуть
-                            в аварии. Коул давно перестал петь и радоваться жизни из-за утраты отца, и Беа напомнила ему о силе воспоминаний
-                            и ценности жизни в моменте. Это очень нежная и трогательная история о том, как важно двигаться вперед, испытывая
-                            новые чувства и эмоции. Главному герою предстоит понять, что значит смириться с горем, балансируя между прошлым
-                            и настоящим.
+                            {{Description}}
                         </span>
                     </div>
                     <div class="info-team">
                         <div class="info-team-column-tittle">
                             Режиссеры:
-                            <span class="info-team-column-data">Эмили Тин</span>
+                            <span class="info-team-column-data">{{directorId}}</span>
                         </div>
                         <div class="info-team-column-tittle">
                             В ролях:
-                            <span class="info-team-column-data">Пейтон Лист, Майкл Чимино, Фиби Холден</span>
+                            <span class="info-team-column-data">{{actorId}}</span>
                         </div>
                         <div class="info-team-column-tittle">
                             Страна:
@@ -142,61 +132,35 @@
             <div class="Slide">
                 <div class="Movies-SlideBar-Container">
                     <div class="Movies-SlideBar-Wrapper" style="transform: translateX(0px)">
-                        <div class="SlideBar-Item">
-                            <a href="#" style="margin-bottom: 12px">
-                                <div class="Movie-CardItem-ImageWrapper">
-                                    <div class="Movie-CardItem-PG">
-                                        <span>18+</span>
-                                    </div>
-                                    <img src="images/background-films/bg-2.jpg" class="SlideBar-Img">
-                                </div>
-                            </a>
-                            <a>
-                                <span class="SlideBar-Tittle">Сигма бой</span>
-                            </a>
-                        </div>
-                        <div class="SlideBar-Item" style="margin-left: 12px">
-                            <a href="#" style="margin-bottom: 12px">
-                                <div class="Movie-CardItem-ImageWrapper">
-                                    <div class="Movie-CardItem-PG">
-                                        <span>18+</span>
-                                    </div>
-                                    <img src="images/background-films/bg-2.jpg" class="SlideBar-Img">
-                                </div>
-                            </a>
-                            <a>
-                                <span class="SlideBar-Tittle">Сигма бой</span>
-                            </a>
-                        </div>
-                        <div class="SlideBar-Item" style="margin-left: 12px">
-                            <a href="#" style="margin-bottom: 12px">
-                                <div class="Movie-CardItem-ImageWrapper">
-                                    <div class="Movie-CardItem-PG">
-                                        <span>18+</span>
-                                    </div>
-                                    <img src="images/background-films/bg-2.jpg" class="SlideBar-Img">
-                                </div>
-                            </a>
-                            <a>
-                                <span class="SlideBar-Tittle">Сигма бой</span>
-                            </a>
-                        </div>
-                        <div class="SlideBar-Item" style="margin-left: 12px">
-                            <a href="#" style="margin-bottom: 12px">
-                                <div class="Movie-CardItem-ImageWrapper">
-                                    <div class="Movie-CardItem-PG">
-                                        <span>18+</span>
-                                    </div>
-                                    <img src="images/background-films/bg-2.jpg" class="SlideBar-Img">
-                                </div>
-                            </a>
-                            <a>
-                                <span class="SlideBar-Tittle">Сигма бой</span>
-                            </a>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
+            <script>
+                const slideBarCatalog = document.getElementsByClassName("Movies-SlideBar-Wrapper")[0];
+                async function loadFilm()
+                {
+                    const response = await fetch('watch/all')
+                    const movieTemplates = await response.json();
+
+                    for (let i = 0; i < 4; i++)
+                    {
+                        const card = document.createElement('div');
+                        card.className = "SlideBar-Item";
+                        card.style = "margin-left: 12px";
+                        card.innerHTML = movieTemplates[getRandomInt(0, movieTemplates.length)];
+                        slideBarCatalog.appendChild(card)
+                    }
+                }
+                loadFilm();
+
+
+                function getRandomInt(min, max) {
+                    const minCeiled = Math.ceil(min);
+                    const maxFloored = Math.floor(max);
+                    return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
+                }
+            </script>
         </div>
     </div>
 </main>
