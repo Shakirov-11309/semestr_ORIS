@@ -4,6 +4,7 @@ using MyHtttpServer.Core.Templator;
 using MyHtttpServer.Session;
 using MyORMLibrary;
 using System.Data.SqlClient;
+using TemplateEngine.Models;
 
 namespace MyHtttpServer.Endponts
 {
@@ -26,9 +27,9 @@ namespace MyHtttpServer.Endponts
         {
             string connectionString =
                 @"Server=localhost; Database=filmDB; User Id=sa; Password=P@ssw0rd;TrustServerCertificate=true;";
-            var connection = new SqlConnection(connectionString);
-            var dBcontext = new ORMContext<Movies>(connection);
-            var data = PutDataToTemplate(dBcontext.GetMovies());
+            var dBcontext = new ORMContext<Movies>(new SqlConnection(connectionString));
+            var movies = dBcontext.GetMovies();
+            var data = PutDataToTemplate(movies);
             return Json(data);
         }
 

@@ -25,20 +25,21 @@ namespace MyHtttpServer.Endponts
                 @"Server=localhost; Database=filmDB; User Id=sa; Password=P@ssw0rd;TrustServerCertificate=true;";
             var connection = new SqlConnection(connectionString);
             var dBcontext = new ORMContext<User>(connection);
-            Console.WriteLine($"Email:{email} Пароль:{password}");
             var user = dBcontext.FirstOrDefault(u => u.Email == email && u.Password == password);
-
+            Console.WriteLine($"Клиент: Email:{email} Пароль:{password}");
             if (user == null)
             {
+                Console.WriteLine($"Такого пользователя нет");
                 return Redirect("login");
             }
 
             string token = Guid.NewGuid().ToString();
             Cookie cookie = new Cookie("session-token", token);
             Context.Response.SetCookie(cookie);
+            Console.Write(cookie);
             SessionStorage.SaveSession(token, user.Id);
-
-            return Redirect("movies");
+            Console.WriteLine($"Успешная авторизация");
+            return Redirect($"movies");
         }
 
         public bool IsAuthorized(HttpRequestContext context)

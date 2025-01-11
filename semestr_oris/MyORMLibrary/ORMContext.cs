@@ -52,12 +52,12 @@ public class ORMContext<T> where T : class, new()
         }
     }
 
-    public T ReadById(int id)
+    public T ReadById(int? id)
     {
         var tableName = typeof(T).Name;
         using (var connection = _dbConnection)
         {
-            connection.Open();
+            if(connection.State != ConnectionState.Open) connection.Open();
             string queryRequest = $"SELECT * FROM {tableName} WHERE id = @id";
 
             using (var command = connection.CreateCommand())
@@ -79,7 +79,6 @@ public class ORMContext<T> where T : class, new()
                 }
             }
         }
-
         return null;
     }
 
@@ -107,7 +106,6 @@ public class ORMContext<T> where T : class, new()
             using (var command = connection.CreateCommand())
             {
                 command.CommandText = queryRequest;
-                _dbConnection.Open();
                 using (var reader = command.ExecuteReader())
                 {
                     if (reader.Read())
@@ -416,7 +414,7 @@ public class ORMContext<T> where T : class, new()
     public List<Movies> GetMovies() 
     {
         var result = new List<Movies>();
-        string query = "SELECT id, card_url, poster_url, amediateka_rating, rating, release_year, description_card, title, bg_url FROM movies";
+        string query = "SELECT id, card_url, poster_url, amediateka_rating, rating, release_year, description_card, title, bg_url, genre FROM movies";
         using (var command = _dbConnection.CreateCommand()) 
         {
             command.CommandText = query;
@@ -436,6 +434,7 @@ public class ORMContext<T> where T : class, new()
                         description_card = reader.GetString(6),
                         title = reader.GetString(7),
                         bg_url = reader.GetString(8),
+                        genre = reader.GetString(9),
 
                     };
                     result.Add(movies);
@@ -444,5 +443,149 @@ public class ORMContext<T> where T : class, new()
             _dbConnection.Close();
         }
         return result;
+    }
+
+    public TempleteData ReadActorsByMovieId(int movieId)
+    {
+        using (var connection = _dbConnection)
+        {
+            if (connection.State != ConnectionState.Open) connection.Open();
+            string queryRequest = @"
+                SELECT a.id, a.name
+                FROM movie_staff ms
+                INNER JOIN actors a ON ms.actor_id = a.id
+                WHERE ms.movie_id = @movieId";
+
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = queryRequest;
+
+                var parameter = command.CreateParameter();
+                parameter.ParameterName = "@movieId";
+                parameter.Value = movieId;
+                command.Parameters.Add(parameter);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        return new TempleteData
+                        {
+                            id = reader.GetInt32(0), // id
+                            name = reader.GetString(1) // name
+                        };
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    public TempleteData ReadDirectorsByMovieId(int movieId)
+    {
+        using (var connection = _dbConnection)
+        {
+            if (connection.State != ConnectionState.Open) connection.Open();
+            string queryRequest = @"
+                SELECT a.id, a.name
+                FROM movie_staff ms
+                INNER JOIN directors a ON ms.actor_id = a.id
+                WHERE ms.movie_id = @movieId";
+
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = queryRequest;
+
+                var parameter = command.CreateParameter();
+                parameter.ParameterName = "@movieId";
+                parameter.Value = movieId;
+                command.Parameters.Add(parameter);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        return new TempleteData
+                        {
+                            id = reader.GetInt32(0), // id
+                            name = reader.GetString(1) // name
+                        };
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    public TempleteData ReadCountriesByMovieId(int movieId)
+    {
+        using (var connection = _dbConnection)
+        {
+            if (connection.State != ConnectionState.Open) connection.Open();
+            string queryRequest = @"
+                SELECT c.id, c.name
+                FROM movie_countries mc
+                INNER JOIN countries c ON mc.country_id = c.id
+                WHERE mc.movie_id = @movieId;";
+
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = queryRequest;
+
+                var parameter = command.CreateParameter();
+                parameter.ParameterName = "@movieId";
+                parameter.Value = movieId;
+                command.Parameters.Add(parameter);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        return new TempleteData
+                        {
+                            id = reader.GetInt32(0), // id
+                            name = reader.GetString(1) // name
+                        };
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    public TempleteData ReadGenresByMovieId(int movieId)
+    {
+        using (var connection = _dbConnection)
+        {
+            if (connection.State != ConnectionState.Open) connection.Open();
+            string queryRequest = @"
+                SELECT c.id, c.name
+                FROM movie_genres mc
+                INNER JOIN genres c ON mc.genre_id = c.id
+                WHERE mc.movie_id = @movieId;";
+
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = queryRequest;
+
+                var parameter = command.CreateParameter();
+                parameter.ParameterName = "@movieId";
+                parameter.Value = movieId;
+                command.Parameters.Add(parameter);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        return new TempleteData
+                        {
+                            id = reader.GetInt32(0), // id
+                            name = reader.GetString(1) // name
+                        };
+                    }
+                }
+            }
+        }
+        return null;
     }
 }

@@ -29,9 +29,5 @@ namespace Models
         public string bg_url { get; set; }
 
         public string card_url { get; set;}
-
-        public string genre { get; set; }
-
-        public string country { get; set; }
     }
 }

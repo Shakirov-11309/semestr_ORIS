@@ -44,9 +44,11 @@ namespace HttpServerLibrary
 
                         // вызываем метод
                         var parametrs = GetParams(context, route.handler);
+                        Console.WriteLine("Обработка запроса");
                         // TODO: подсказка, null - это параметры  (если это Get -> query, если Post -> formData)
                         var result = route.handler.Invoke(endpointInstance, parametrs) as IHttpResponseResult;
                         result?.Execute(context.Response);
+                        Console.WriteLine("Конец обработки");
                     }
                 }
             }
@@ -54,6 +56,9 @@ namespace HttpServerLibrary
             {
                 Successor.HandleRequest(context);
             }
+            Console.WriteLine($"Ссылка: {context.Request.Url}" +
+                $" Status:{context.Response.StatusCode} " +
+                $" Method:{context.Request.HttpMethod}\n");
             context.Response.Close();
         }
 
@@ -115,7 +120,9 @@ namespace HttpServerLibrary
 
             if (context.Request.HttpMethod == "GET" || context.Request.HttpMethod == "POST")
             {
-                // Извлечение параметров из QueryString (GET) или тела запроса (POST)
+                using var reader = new StreamReader(context.Request.InputStream);
+                string body = reader.ReadToEnd();
+                var data = HttpUtility.ParseQueryString(body);
                 foreach (var parameter in parameters)
                 {
                     if (context.Request.HttpMethod == "GET")
@@ -125,9 +132,9 @@ namespace HttpServerLibrary
                     }
                     else if (context.Request.HttpMethod == "POST")
                     {
-                        using var reader = new StreamReader(context.Request.InputStream);
-                        string body = reader.ReadToEnd();
-                        var data = HttpUtility.ParseQueryString(body);
+                        //using var reader = new StreamReader(context.Request.InputStream);
+                        // string body = reader.ReadToEnd();
+                        // var data = HttpUtility.ParseQueryString(body);
                         result.Add(Convert.ChangeType(data[parameter.Name], parameter.ParameterType));
                     }
                 }

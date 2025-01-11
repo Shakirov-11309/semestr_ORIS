@@ -960,3 +960,4 @@ C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_ori
 C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyHtttpServer\bin\Debug\net8.0\TemplateEngine.pdb
 C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyHtttpServer\bin\Debug\net8.0\Templates\Pages\Movies\index.html
 C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyHtttpServer\bin\Debug\net8.0\Templates\Pages\Auth\login.html
+C:\Users\User\Desktop\Новая папка\almostReady\semestr_ORIS\semestr_oris\MyHtttpServer\bin\Debug\net8.0\Templates\Pages\AdminPanel\adminPanel.html

@@ -1,4 +1,5 @@
-﻿using MyHtttpServer.Core.Templator;
+﻿using Models;
+using MyHtttpServer.Core.Templator;
 using TemplateEngineUnitTests.Models;
 
 namespace MyHttpServer.UnitTests.Core.Templator
@@ -52,6 +53,18 @@ namespace MyHttpServer.UnitTests.Core.Templator
             Person user = new Person() { Name = "Иван", Login = "test@test.ru", Password = "passWord" };
             var result = customTemplator.GetHtmlByTemplate(template, user);
             Assert.AreEqual("Привет Иван! <p>Ваш логин: test@test.ru; Ваш пароль: passWord; Мы очень рады с вами познакомится дорогой Иван!</p>", result);
+        }
+
+
+        [TestMethod]
+        public void GetHtmlByTemplate_ResultSuccess()
+        {
+            // Arrange
+            var customTemplator = new CustomTemplator();
+            string template = "{title} Описание:{description}";
+            Movies user = new Movies() { title = "Крутой парень", description = "Крутой парень курит большую сигару" };
+            var result = customTemplator.GetHtmlByTemplate(template, user);
+            Assert.AreEqual("Крутой парень Описание:Крутой парень курит большую сигару", result);
         }
     }
 }

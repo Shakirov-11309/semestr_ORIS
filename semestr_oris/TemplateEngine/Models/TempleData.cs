@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TemplateEngine.Models
 {
-    public class Actors
+    public class TempleteData
     {
         public int id { get; set; }
 

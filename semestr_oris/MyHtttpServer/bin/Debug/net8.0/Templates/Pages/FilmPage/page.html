@@ -37,7 +37,7 @@
                 <a style="margin: 0 2px; color:#868fa0; cursor: default;">/</a>
                 <a class="choice-category" href="movies">Фильмы</a>
                 <a style="margin: 0 2px; color:#868fa0; cursor: default;">/</a>
-                <a class="choice-category" href="films/fantasy">Фэнтези</a>
+                <a class="choice-category" href="films/fantasy">{{genres}}</a>
                 <a style="margin: 0 2px; color:#868fa0; cursor: default;">/</a>
                 <a class="selected-category">{{Title}}</a>
             </div>
@@ -93,7 +93,7 @@
                     <div class="descriptionHeader_dataFilm">
                         <div class="data-item">{{Year}}</div>
                         <div class="data-item">{{Rating}}+</div>
-                        <div class="data-item">Фэнтези</div>
+                        <div class="data-item">{{genres}}</div>
                     </div>
                 </div>
                 <div class="descriptionInfo">
@@ -109,15 +109,15 @@
                         </div>
                         <div class="info-team-column-tittle">
                             В ролях:
-                            <span class="info-team-column-data">{{actorId}}</span>
+                            <span class="info-team-column-data">{{actors}}</span>
                         </div>
                         <div class="info-team-column-tittle">
                             Страна:
-                            <span class="info-team-column-data">США</span>
+                            <span class="info-team-column-data">{{countries}}</span>
                         </div>
                         <div class="info-team-column-tittle">
                             Жанры:
-                            <span class="info-team-column-data">Фэнтези, Комедия, Мелодрама</span>
+                            <span class="info-team-column-data">{{genres}}</span>
                         </div>
                     </div>
                 </div>
@@ -138,22 +138,26 @@
             </div>
             <script>
                 const slideBarCatalog = document.getElementsByClassName("Movies-SlideBar-Wrapper")[0];
-                async function loadFilm()
-                {
-                    const response = await fetch('watch/all')
+                async function loadFilm() {
+                    const response = await fetch('watch/all');
                     const movieTemplates = await response.json();
 
-                    for (let i = 0; i < 4; i++)
-                    {
-                        const card = document.createElement('div');
-                        card.className = "SlideBar-Item";
-                        card.style = "margin-left: 12px";
-                        card.innerHTML = movieTemplates[getRandomInt(0, movieTemplates.length)];
-                        slideBarCatalog.appendChild(card)
+                    const usedIndices = new Set();
+
+                    while (usedIndices.size < 4) { 
+                        const randomIndex = getRandomInt(0, movieTemplates.length);
+                        if (!usedIndices.has(randomIndex)) { 
+                            usedIndices.add(randomIndex); 
+
+                            const card = document.createElement('div');
+                            card.className = "SlideBar-Item";
+                            card.style = "margin-left: 12px";
+                            card.innerHTML = movieTemplates[randomIndex];
+                            slideBarCatalog.appendChild(card);
+                        }
                     }
                 }
                 loadFilm();
-
 
                 function getRandomInt(min, max) {
                     const minCeiled = Math.ceil(min);

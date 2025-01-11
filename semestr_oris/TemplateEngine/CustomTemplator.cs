@@ -17,7 +17,7 @@ namespace MyHtttpServer.Core.Templator
             var properties = obj.GetType().GetProperties();
             foreach (var property in properties)
             {
-                var placeholder = $"{{{{{property.Name}}}}}";
+                var placeholder = $"{{{property.Name}}}";
                 template = template.Replace(placeholder, property.GetValue(obj)?.ToString(), StringComparison.OrdinalIgnoreCase);
             }
             return template;
@@ -31,9 +31,9 @@ namespace MyHtttpServer.Core.Templator
 """;
 
             // Замена блока
-            string replacement = @"
+            string replacement = $@"
 <div class=""navbar-items"">
-    <img src=""images/icon-profile.jpg"" width=""50"" height=""50"" class=""icon-profile-wrapper"">
+    <a href=""admin""><img src=""images/icon-profile.jpg"" width=""50"" height=""50"" class=""icon-profile-wrapper""></a>
 </div>";
 
             // Заменяем блок с учетом отступов
@@ -79,13 +79,7 @@ namespace MyHtttpServer.Core.Templator
                         <h6>{movies.release_year}</h6>
                     </div>
                     <div class=""content-data-other"">
-                        <h6>ФЭНТЕЗИ</h6>
-                    </div>
-                    <div class=""content-data-other"">
-                        <h6>КОМЕДИЯ</h6>
-                    </div>
-                    <div class=""content-data-other"">
-                        <h6>МЕЛОДРАМА</h6>
+                        <h6>{movies.genre}</h6>
                     </div>
                 </div>
                 <div class=""item-content-data-context"">
@@ -109,7 +103,7 @@ namespace MyHtttpServer.Core.Templator
             return template;
         }
 
-        public static string GetHtmlByTemplateFilmPageData(Movies movies, string template) 
+        public static string GetHtmlByTemplateFilmPageData(Movies movies, TempleteData actors, TempleteData directors, TempleteData countries, TempleteData genres, string template) 
         {
             template = template.Replace("{{posterUrl}}", movies.bg_url);
             template = template.Replace("{{Logo}}", movies.card_url); 
@@ -119,6 +113,10 @@ namespace MyHtttpServer.Core.Templator
             template = template.Replace("{{Year}}", movies.release_year.ToString());
             template = template.Replace("{{Rating}}", movies.rating.ToString());
             template = template.Replace("{{Description}}", movies.description);
+            template = template.Replace("{{actors}}", actors.name);
+            template = template.Replace("{{directorId}}", directors.name);
+            template = template.Replace("{{countries}}", countries.name);
+            template = template.Replace("{{genres}}", genres.name);
             return template;
         }
     }

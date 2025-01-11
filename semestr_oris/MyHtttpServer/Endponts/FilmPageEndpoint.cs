@@ -21,10 +21,17 @@ namespace MyHtttpServer.Endponts
             var file = File.ReadAllText(@"Templates/Pages/FilmPage/page.html");
             string connectionString =
                 @"Server=localhost; Database=filmDB; User Id=sa; Password=P@ssw0rd;TrustServerCertificate=true;";
-            var connection = new SqlConnection(connectionString);
-            var dBcontext = new ORMContext<Movies>(connection);
-            var dataMovie = dBcontext.ReadById(filmId);
-            var result = CustomTemplator.GetHtmlByTemplateFilmPageData(dataMovie, file);
+            var dBMovies = new ORMContext<Movies>(new SqlConnection(connectionString));
+            var dBMovieActors = new ORMContext<Movies>(new SqlConnection(connectionString));
+            var dBMovieDirectors = new ORMContext<Movies>(new SqlConnection(connectionString));
+            var dBMovieCountries = new ORMContext<Movies>(new SqlConnection(connectionString));
+            var dBMovieGenres = new ORMContext<Movies>(new SqlConnection(connectionString));
+            var dataMovie = dBMovies.ReadById(filmId);
+            var actors = dBMovieActors.ReadActorsByMovieId(filmId);
+            var directors = dBMovieDirectors.ReadDirectorsByMovieId(filmId);
+            var countries = dBMovieCountries.ReadCountriesByMovieId(filmId);
+            var genres = dBMovieGenres.ReadGenresByMovieId(filmId);
+            var result = CustomTemplator.GetHtmlByTemplateFilmPageData(dataMovie, actors, directors, countries, genres, file);
             if (IsAuthorized(Context)) return Html(CustomTemplator.GetHtmlAuthorizatedPage(result));
             return Html(result);
         }

@@ -121,6 +121,9 @@
     <None Update="public\images\youtube-logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Templates\Pages\AdminPanel\adminPanel.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Templates\Pages\Auth\login.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

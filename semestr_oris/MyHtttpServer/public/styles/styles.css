@@ -205,7 +205,7 @@ h5{
 }
 
 .wanted-cataloge{
-    overflow-x: auto;
+    overflow-y: hidden;
     margin: 16px 0;
     height: 100%;
     display: flex;
@@ -755,7 +755,7 @@ ul{
     opacity: .8;
 }
 
-@media (min-width: 1500px) {
+@media (max-width: 1600px) {
     .item-loop {
         visibility: hidden;
     }
@@ -852,6 +852,79 @@ ul{
         grid-auto-rows: auto;
         gap: 20px;
     }
+
+    .item-loop {
+        visibility: hidden;
+    }
+
+    .btn-1 {
+        transition: 0.4s;
+        padding: 0 10px;
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        background: rgba(86, 92, 103, .4);
+        color: #fff;
+        border: 2px solid transparent;
+        cursor: pointer;
+        margin-right: 20px;
+        font-size: 15px;
+        border-radius: 10px;
+        width: 170px;
+        height: 38px;
+        align-items: center;
+        justify-content: center;
+        font-family: CirceRegular, sans-serif;
+    }
+
+    .btn-2 {
+        transition: 0.4s;
+        left: 2px;
+        padding: 0 34px 0 24px;
+        border-radius: 8px 0 0 8px;
+        position: relative;
+        display: flex;
+        background: rgba(86, 92, 103, .4);
+        color: #fff;
+        border: 2px solid transparent;
+        cursor: pointer;
+        margin-right: 25px;
+        font-size: 15px;
+        width: 100px;
+        height: 38px;
+        align-items: center;
+        justify-content: center;
+        font-family: CirceRegular, sans-serif;
+    }
+
+    .btn-3 {
+        transition: 0.4s;
+        right: 10px;
+        position: relative;
+        display: flex;
+        background: #feba2b;
+        color: #111113;
+        border: 2px solid transparent;
+        cursor: pointer;
+        font-size: 15px;
+        border-radius: 8px;
+        width: 170px;
+        height: 38px;
+        align-items: center;
+        justify-content: center;
+        font-family: CirceRegular, sans-serif;
+    }
+
+    .navbar-item-1 {
+        line-height: 17px;
+        font-size: 15px;
+    }
+
+    .navbar-item {
+        margin-left: 25px;
+        line-height: 17px;
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 928px){
@@ -862,14 +935,172 @@ ul{
         grid-auto-rows: auto;
         gap: 20px;
     }
+
+    .item-loop {
+        visibility: hidden;
+    }
+
+    .btn-1 {
+        transition: 0.4s;
+        padding: 0 10px;
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        background: rgba(86, 92, 103, .4);
+        color: #fff;
+        border: 2px solid transparent;
+        cursor: pointer;
+        margin-right: 20px;
+        font-size: 15px;
+        border-radius: 10px;
+        width: 170px;
+        height: 38px;
+        align-items: center;
+        justify-content: center;
+        font-family: CirceRegular, sans-serif;
+    }
+
+    .btn-2 {
+        transition: 0.4s;
+        left: 2px;
+        padding: 0 34px 0 24px;
+        border-radius: 8px 0 0 8px;
+        position: relative;
+        display: flex;
+        background: rgba(86, 92, 103, .4);
+        color: #fff;
+        border: 2px solid transparent;
+        cursor: pointer;
+        margin-right: 25px;
+        font-size: 15px;
+        width: 100px;
+        height: 38px;
+        align-items: center;
+        justify-content: center;
+        font-family: CirceRegular, sans-serif;
+    }
+
+    .btn-3 {
+        transition: 0.4s;
+        right: 10px;
+        position: relative;
+        display: flex;
+        background: #feba2b;
+        color: #111113;
+        border: 2px solid transparent;
+        cursor: pointer;
+        font-size: 15px;
+        border-radius: 8px;
+        width: 170px;
+        height: 38px;
+        align-items: center;
+        justify-content: center;
+        font-family: CirceRegular, sans-serif;
+    }
+
+    .navbar-item-1 {
+        line-height: 17px;
+        font-size: 15px;
+    }
+
+    .navbar-item {
+        margin-left: 25px;
+        line-height: 17px;
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 768px){
+    .wrapper-cataloge {
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-auto-rows: auto;
+        gap: 20px;
+    }
 
+    .item-loop {
+        visibility: hidden;
+    }
+
+    .btn-1 {
+        transition: 0.4s;
+        padding: 0 10px;
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        background: rgba(86, 92, 103, .4);
+        color: #fff;
+        border: 2px solid transparent;
+        cursor: pointer;
+        margin-right: 20px;
+        font-size: 15px;
+        border-radius: 10px;
+        width: 170px;
+        height: 38px;
+        align-items: center;
+        justify-content: center;
+        font-family: CirceRegular, sans-serif;
+    }
+
+    .btn-2 {
+        transition: 0.4s;
+        left: 2px;
+        padding: 0 34px 0 24px;
+        border-radius: 8px 0 0 8px;
+        position: relative;
+        display: flex;
+        background: rgba(86, 92, 103, .4);
+        color: #fff;
+        border: 2px solid transparent;
+        cursor: pointer;
+        margin-right: 25px;
+        font-size: 15px;
+        width: 100px;
+        height: 38px;
+        align-items: center;
+        justify-content: center;
+        font-family: CirceRegular, sans-serif;
+    }
+
+    .btn-3 {
+        transition: 0.4s;
+        right: 10px;
+        position: relative;
+        display: flex;
+        background: #feba2b;
+        color: #111113;
+        border: 2px solid transparent;
+        cursor: pointer;
+        font-size: 15px;
+        border-radius: 8px;
+        width: 170px;
+        height: 38px;
+        align-items: center;
+        justify-content: center;
+        font-family: CirceRegular, sans-serif;
+    }
+
+    .navbar-item-1 {
+        line-height: 17px;
+        font-size: 15px;
+    }
+
+    .navbar-item {
+        margin-left: 25px;
+        line-height: 17px;
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 546px){
-
+    .wrapper-cataloge {
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-auto-rows: auto;
+        gap: 20px;
+    }
 }
 
 
