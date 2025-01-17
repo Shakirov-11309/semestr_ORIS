@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyORMLibraryUnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bb31364fa4fc2963a6a77807a613f04e9d96e5f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9aabf9d0c169db9a86869256ca964f86218d46f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyORMLibraryUnitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyORMLibraryUnitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -25,21 +25,22 @@ namespace MyHtttpServer.Endponts
                 @"Server=localhost; Database=filmDB; User Id=sa; Password=P@ssw0rd;TrustServerCertificate=true;";
             var connection = new SqlConnection(connectionString);
             var dBcontext = new ORMContext<User>(connection);
-            var user = dBcontext.FirstOrDefault(u => u.Email == email && u.Password == password);
+            var user = dBcontext.ReadByAll($"Email = '{email}' AND Password = '{password}'").FirstOrDefault();
             Console.WriteLine($"Клиент: Email:{email} Пароль:{password}");
             if (user == null)
             {
-                Console.WriteLine($"Такого пользователя нет");
-                return Redirect("login");
+                var errText = "Сервер: Такого пользователя нет или введены не вырно почта и пароль";
+                Console.WriteLine(errText);
+                return Json(new { success = false, message = "Неверные почта или пароль." });
             }
 
             string token = Guid.NewGuid().ToString();
             Cookie cookie = new Cookie("session-token", token);
             Context.Response.SetCookie(cookie);
-            Console.Write(cookie);
-            SessionStorage.SaveSession(token, user.Id);
-            Console.WriteLine($"Успешная авторизация");
-            return Redirect($"movies");
+            Console.Write("Сервер: " + cookie);
+            SessionStorage.SaveSession(token, user.id);
+            Console.WriteLine($"\nСервер: Успешная авторизация");
+            return Json(new { success = true, redirectUrl = "movies" });
         }
 
         public bool IsAuthorized(HttpRequestContext context)

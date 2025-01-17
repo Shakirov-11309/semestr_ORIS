@@ -9,13 +9,15 @@
         /// <summary>
         /// Свойство задает и получает логин поль-ля
         /// </summary>
-        public string Email { get; set; }
+        public string email { get; set; }
 
         /// <summary>
         /// Свойство задает и получает пароль поль-ля
         /// </summary>
-        public string Password { get; set; }
+        public string password { get; set; }
 
-        public int Id { get; set; }
+        public int id { get; set; }
+
+        public bool is_admin { get; set; }
     }
 }

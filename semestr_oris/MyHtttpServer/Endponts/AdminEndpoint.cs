@@ -1,13 +1,10 @@
 ﻿using HttpServerLibrary;
+using Models;
 using MyHtttpServer.Session;
 using MyHttttpServer.Models;
 using MyORMLibrary;
-using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.Json;
 
 namespace MyHtttpServer.Endponts
 {
@@ -22,20 +19,75 @@ namespace MyHtttpServer.Endponts
                 @"Server=localhost; Database=filmDB; User Id=sa; Password=P@ssw0rd;TrustServerCertificate=true;";
             var connection = new SqlConnection(connectionString);
             var dBcontext = new ORMContext<User>(connection);
-
+            
             if (!IsAuthorized(Context)) 
             {
                 return Redirect("login");
             }
             else 
             {
-                Console.WriteLine(token);
                 var userID = SessionStorage.GetUserId(token.ToString());
-                Console.WriteLine(userID);
-                return Html(file);
-                
+                var is_admin = dBcontext.CheckUserByValideAdmin(userID);
+                if (is_admin)
+                {
+                    return Html(file);
+                }
+                else 
+                {
+                    return Redirect("movies");
+                }
             }
         }
+
+        //[Post("admin/handleMovies")]
+        //public IHttpResponseResult HandleMovies(HttpRequestContext context)
+        //{
+        //    try
+        //    {
+        //        // Чтение тела запроса
+        //        var movieData = JsonSerializer.Deserialize<Movies>(context);
+
+        //        // Логика обработки данных
+        //        if (context.Request.Headers["X-HTTP-Method-Override"] == "POST")
+        //        {
+        //            // Логика для добавления фильма
+        //            AddMovieToDatabase(movieData);
+        //        }
+        //        else if (context.Request.Headers["X-HTTP-Method-Override"] == "DELETE")
+        //        {
+        //            // Логика для удаления фильма
+        //            //RemoveMovieFromDatabase(movieData.Title);
+        //        }
+
+        //        return Json(new { message = "Успешно обработано" });
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return Json(new { error = "Ошибка обработки запроса", details = ex.Message });
+        //    }
+        //}
+
+        private void AddMovieToDatabase(Movies movie)
+        {
+            // Логика добавления фильма в базу данных
+            string connectionString = "Server=localhost; Database=filmDB; User Id=sa; Password=P@ssw0rd;TrustServerCertificate=true;";
+            using (var connection = new SqlConnection(connectionString))
+            {
+                var dBcontext = new ORMContext<Movies>(connection);
+                dBcontext.Create(movie); 
+            }
+        }
+
+        //private void RemoveMovieFromDatabase(string title)
+        //{
+        //    // Логика удаления фильма из базы данных
+        //    string connectionString = "Server=localhost; Database=filmDB; User Id=sa; Password=P@ssw0rd;TrustServerCertificate=true;";
+        //    using (var connection = new SqlConnection(connectionString))
+        //    {
+        //        var dBcontext = new ORMContext<Movies>(connection);
+        //        dBcontext.Delete(m => m.Title == title); // Удаление записи по названию
+        //    }
+        //}
 
         public bool IsAuthorized(HttpRequestContext context)
         {

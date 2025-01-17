@@ -3,39 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{638F0EDE-3A48-43EF-BE09-9B1F49D47711}|HttpServerLibrary\\HttpServerLibrary.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\httpserverlibrary\\handlers\\endpointshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{638F0EDE-3A48-43EF-BE09-9B1F49D47711}|HttpServerLibrary\\HttpServerLibrary.csproj|solutionrelative:httpserverlibrary\\handlers\\endpointshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\myhtttpserver\\endponts\\adminendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\endponts\\adminendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\myhtttpserver\\endponts\\filmpageendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\endponts\\filmpageendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\myhtttpserver\\templates\\pages\\adminpanel\\adminpanel.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\templates\\pages\\adminpanel\\adminpanel.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\myhtttpserver\\templates\\pages\\auth\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\templates\\pages\\auth\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{638F0EDE-3A48-43EF-BE09-9B1F49D47711}|HttpServerLibrary\\HttpServerLibrary.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\httpserverlibrary\\handlers\\staticfileshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{638F0EDE-3A48-43EF-BE09-9B1F49D47711}|HttpServerLibrary\\HttpServerLibrary.csproj|solutionrelative:httpserverlibrary\\handlers\\staticfileshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2ABC5243-4B9B-405E-8E86-9C401B7F0A96}|MyORMLibrary\\MyORMLibrary.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\myormlibrary\\ormcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2ABC5243-4B9B-405E-8E86-9C401B7F0A96}|MyORMLibrary\\MyORMLibrary.csproj|solutionrelative:myormlibrary\\ormcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\myhtttpserver\\endponts\\authendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\endponts\\authendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DC1DA0D-A166-4E9F-BC58-93BB4470BF9E}|TemplateEngine\\TemplateEngine.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\templateengine\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DC1DA0D-A166-4E9F-BC58-93BB4470BF9E}|TemplateEngine\\TemplateEngine.csproj|solutionrelative:templateengine\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/localhost/filmDB/sa/SqlTable/dbo.users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\myhtttpserver\\session\\sessionstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\session\\sessionstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\myhtttpserver\\templates\\pages\\adminpanel\\adminpanel.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\templates\\pages\\adminpanel\\adminpanel.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\myhtttpserver\\endponts\\moviesendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,59 +31,22 @@
       "RelativeMoniker": "D:0:0:{4DC1DA0D-A166-4E9F-BC58-93BB4470BF9E}|TemplateEngine\\TemplateEngine.csproj|solutionrelative:templateengine\\customtemplator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\myhtttpserver\\templates\\pages\\movies\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\templates\\pages\\movies\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/localhost/filmDB/sa/SqlTable/dbo.movies.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DC1DA0D-A166-4E9F-BC58-93BB4470BF9E}|TemplateEngine\\TemplateEngine.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\templateengine\\models\\movies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DC1DA0D-A166-4E9F-BC58-93BB4470BF9E}|TemplateEngine\\TemplateEngine.csproj|solutionrelative:templateengine\\models\\movies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\myhtttpserver\\templates\\pages\\authorizatedindex.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\templates\\pages\\authorizatedindex.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\myhtttpserver\\public\\styles\\stylepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\public\\styles\\stylepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/localhost/testDB/sa/SqlTable/dbo.users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\myhtttpserver\\endponts\\authendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\endponts\\authendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\myhtttpserver\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{638F0EDE-3A48-43EF-BE09-9B1F49D47711}|HttpServerLibrary\\HttpServerLibrary.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\httpserverlibrary\\core\\httprequestcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{638F0EDE-3A48-43EF-BE09-9B1F49D47711}|HttpServerLibrary\\HttpServerLibrary.csproj|solutionrelative:httpserverlibrary\\core\\httprequestcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{638F0EDE-3A48-43EF-BE09-9B1F49D47711}|HttpServerLibrary\\HttpServerLibrary.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\httpserverlibrary\\core\\baseendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{638F0EDE-3A48-43EF-BE09-9B1F49D47711}|HttpServerLibrary\\HttpServerLibrary.csproj|solutionrelative:httpserverlibrary\\core\\baseendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{638F0EDE-3A48-43EF-BE09-9B1F49D47711}|HttpServerLibrary\\HttpServerLibrary.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\httpserverlibrary\\configuration\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{638F0EDE-3A48-43EF-BE09-9B1F49D47711}|HttpServerLibrary\\HttpServerLibrary.csproj|solutionrelative:httpserverlibrary\\configuration\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{638F0EDE-3A48-43EF-BE09-9B1F49D47711}|HttpServerLibrary\\HttpServerLibrary.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\httpserverlibrary\\handlers\\handler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{638F0EDE-3A48-43EF-BE09-9B1F49D47711}|HttpServerLibrary\\HttpServerLibrary.csproj|solutionrelative:httpserverlibrary\\handlers\\handler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{638F0EDE-3A48-43EF-BE09-9B1F49D47711}|HttpServerLibrary\\HttpServerLibrary.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\httpserverlibrary\\httpresponse\\ihttpresponseresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{638F0EDE-3A48-43EF-BE09-9B1F49D47711}|HttpServerLibrary\\HttpServerLibrary.csproj|solutionrelative:httpserverlibrary\\httpresponse\\ihttpresponseresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{638F0EDE-3A48-43EF-BE09-9B1F49D47711}|HttpServerLibrary\\HttpServerLibrary.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\httpserverlibrary\\httpresponse\\redirectresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{638F0EDE-3A48-43EF-BE09-9B1F49D47711}|HttpServerLibrary\\HttpServerLibrary.csproj|solutionrelative:httpserverlibrary\\httpresponse\\redirectresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{638F0EDE-3A48-43EF-BE09-9B1F49D47711}|HttpServerLibrary\\HttpServerLibrary.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\httpserverlibrary\\httpresponse\\htmlresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{638F0EDE-3A48-43EF-BE09-9B1F49D47711}|HttpServerLibrary\\HttpServerLibrary.csproj|solutionrelative:httpserverlibrary\\httpresponse\\htmlresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\UserProfileEndpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MyHtttpServer\\Endponts\\UserProfileEndpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Templates\\Pages\\unathorizated.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MyHtttpServer\\Templates\\Pages\\unathorizated.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|c:\\users\\user\\desktop\\\u043D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostready\\semestr_oris\\semestr_oris\\myhtttpserver\\templates\\pages\\filmpage\\page.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE3D6FC0-657D-4243-A9B3-182377C0412D}|MyHtttpServer\\MyHtttpServer.csproj|solutionrelative:myhtttpserver\\templates\\pages\\filmpage\\page.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -108,303 +56,149 @@
       "DocumentGroups": [
         {
           "DockedHeight": 288,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EndpointsHandler.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\Handlers\\EndpointsHandler.cs",
-              "RelativeDocumentMoniker": "HttpServerLibrary\\Handlers\\EndpointsHandler.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\Handlers\\EndpointsHandler.cs",
-              "RelativeToolTip": "HttpServerLibrary\\Handlers\\EndpointsHandler.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAYwDkAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T10:51:22.838Z",
-              "EditorCaption": ""
+              "DocumentIndex": 2,
+              "Title": "login.html",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Templates\\Pages\\Auth\\login.html",
+              "RelativeDocumentMoniker": "MyHtttpServer\\Templates\\Pages\\Auth\\login.html",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Templates\\Pages\\Auth\\login.html",
+              "RelativeToolTip": "MyHtttpServer\\Templates\\Pages\\Auth\\login.html",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-16T18:30:15.79Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\TemplateEngine\\Models\\User.cs",
-              "RelativeDocumentMoniker": "TemplateEngine\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\TemplateEngine\\Models\\User.cs",
-              "RelativeToolTip": "TemplateEngine\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBIAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T10:24:56.21Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "dbo.users [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost/filmDB/sa/SqlTable/dbo.users.sql",
-              "ToolTip": "dbo.users [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-01-11T09:48:01.997Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminEndpoint.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\AdminEndpoint.cs",
-              "RelativeDocumentMoniker": "MyHtttpServer\\Endponts\\AdminEndpoint.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\AdminEndpoint.cs",
-              "RelativeToolTip": "MyHtttpServer\\Endponts\\AdminEndpoint.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA0wCEAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T09:06:32.059Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "MoviesEndpoint.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\MoviesEndpoint.cs",
               "RelativeDocumentMoniker": "MyHtttpServer\\Endponts\\MoviesEndpoint.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\MoviesEndpoint.cs",
               "RelativeToolTip": "MyHtttpServer\\Endponts\\MoviesEndpoint.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAmwBQAAABSAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAnwBoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T09:21:20.882Z"
+              "WhenOpened": "2025-01-16T16:53:17.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "dbo.movies [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost/filmDB/sa/SqlTable/dbo.movies.sql",
+              "ToolTip": "dbo.movies [\u0414\u0430\u043D\u043D\u044B\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-16T16:46:27.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AQIAAFMTAAAAAAAAAAAiwGYTAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-01-16T16:40:54.714Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AuthEndpoint.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\AuthEndpoint.cs",
-              "RelativeDocumentMoniker": "MyHtttpServer\\Endponts\\AuthEndpoint.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\AuthEndpoint.cs",
-              "RelativeToolTip": "MyHtttpServer\\Endponts\\AuthEndpoint.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAzwBoAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T08:33:31.681Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CustomTemplator.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\TemplateEngine\\CustomTemplator.cs",
-              "RelativeDocumentMoniker": "TemplateEngine\\CustomTemplator.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\TemplateEngine\\CustomTemplator.cs",
-              "RelativeToolTip": "TemplateEngine\\CustomTemplator.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAcwBkAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T18:13:40.972Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "ORMContext.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyORMLibrary\\ORMContext.cs",
               "RelativeDocumentMoniker": "MyORMLibrary\\ORMContext.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyORMLibrary\\ORMContext.cs",
               "RelativeToolTip": "MyORMLibrary\\ORMContext.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAiwDYAAAAaAAAA",
+              "ViewState": "AQIAAJ0AAAAAAAAAAAAjwLEAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T12:04:37.627Z"
+              "WhenOpened": "2025-01-16T16:22:38.124Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FilmPageEndpoint.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\FilmPageEndpoint.cs",
-              "RelativeDocumentMoniker": "MyHtttpServer\\Endponts\\FilmPageEndpoint.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\FilmPageEndpoint.cs",
-              "RelativeToolTip": "MyHtttpServer\\Endponts\\FilmPageEndpoint.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAvwBwAAAAsAAAA",
+              "DocumentIndex": 0,
+              "Title": "AdminEndpoint.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\AdminEndpoint.cs",
+              "RelativeDocumentMoniker": "MyHtttpServer\\Endponts\\AdminEndpoint.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\AdminEndpoint.cs",
+              "RelativeToolTip": "MyHtttpServer\\Endponts\\AdminEndpoint.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAEAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T09:06:33.187Z"
+              "WhenOpened": "2025-01-16T16:16:51.225Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SessionStorage.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Session\\SessionStorage.cs",
-              "RelativeDocumentMoniker": "MyHtttpServer\\Session\\SessionStorage.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Session\\SessionStorage.cs",
-              "RelativeToolTip": "MyHtttpServer\\Session\\SessionStorage.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAIwBkAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T16:57:54.127Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "adminPanel.html",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Templates\\Pages\\AdminPanel\\adminPanel.html",
               "RelativeDocumentMoniker": "MyHtttpServer\\Templates\\Pages\\AdminPanel\\adminPanel.html",
               "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Templates\\Pages\\AdminPanel\\adminPanel.html",
               "RelativeToolTip": "MyHtttpServer\\Templates\\Pages\\AdminPanel\\adminPanel.html",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAAAGEAAABJAAAA",
+              "ViewState": "AQIAAJMAAAAAAAAAAADwv6MAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-01-07T19:45:54.574Z"
+              "WhenOpened": "2025-01-16T16:10:37.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomTemplator.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\TemplateEngine\\CustomTemplator.cs",
+              "RelativeDocumentMoniker": "TemplateEngine\\CustomTemplator.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\TemplateEngine\\CustomTemplator.cs",
+              "RelativeToolTip": "TemplateEngine\\CustomTemplator.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAnwBoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T16:53:17.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StaticFilesHandler.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\Handlers\\StaticFilesHandler.cs",
+              "RelativeDocumentMoniker": "HttpServerLibrary\\Handlers\\StaticFilesHandler.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\Handlers\\StaticFilesHandler.cs",
+              "RelativeToolTip": "HttpServerLibrary\\Handlers\\StaticFilesHandler.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAnwEAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T16:53:17.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "stylePage.css",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\public\\styles\\stylePage.css",
+              "RelativeDocumentMoniker": "MyHtttpServer\\public\\styles\\stylePage.css",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\public\\styles\\stylePage.css",
+              "RelativeToolTip": "MyHtttpServer\\public\\styles\\stylePage.css",
+              "ViewState": "AQIAAKAAAAAAAAAAAADgv7cAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-16T15:39:53.332Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Templates\\Pages\\Movies\\index.html",
-              "RelativeDocumentMoniker": "MyHtttpServer\\Templates\\Pages\\Movies\\index.html",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Templates\\Pages\\Movies\\index.html",
-              "RelativeToolTip": "MyHtttpServer\\Templates\\Pages\\Movies\\index.html",
-              "ViewState": "AQIAAPkAAAAAAAAAAAAAADEBAAAiAAAA",
+              "Title": "page.html",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Templates\\Pages\\FilmPage\\page.html",
+              "RelativeDocumentMoniker": "MyHtttpServer\\Templates\\Pages\\FilmPage\\page.html",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Templates\\Pages\\FilmPage\\page.html",
+              "RelativeToolTip": "MyHtttpServer\\Templates\\Pages\\FilmPage\\page.html",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACwAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-01-10T11:27:33.564Z"
+              "WhenOpened": "2025-01-16T15:38:37.794Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Movies.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\TemplateEngine\\Models\\Movies.cs",
-              "RelativeDocumentMoniker": "TemplateEngine\\Models\\Movies.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\TemplateEngine\\Models\\Movies.cs",
-              "RelativeToolTip": "TemplateEngine\\Models\\Movies.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwCIAAAApAAAA",
+              "DocumentIndex": 10,
+              "Title": "AuthEndpoint.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\AuthEndpoint.cs",
+              "RelativeDocumentMoniker": "MyHtttpServer\\Endponts\\AuthEndpoint.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\AuthEndpoint.cs",
+              "RelativeToolTip": "MyHtttpServer\\Endponts\\AuthEndpoint.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwCwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T21:20:44.445Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "authorizatedIndex.html",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Templates\\Pages\\authorizatedIndex.html",
-              "RelativeDocumentMoniker": "MyHtttpServer\\Templates\\Pages\\authorizatedIndex.html",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Templates\\Pages\\authorizatedIndex.html",
-              "RelativeToolTip": "MyHtttpServer\\Templates\\Pages\\authorizatedIndex.html",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-01-08T12:04:30.675Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "UserProfileEndpoint.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\UserProfileEndpoint.cs",
-              "RelativeDocumentMoniker": "MyHtttpServer\\Endponts\\UserProfileEndpoint.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Endponts\\UserProfileEndpoint.cs",
-              "RelativeToolTip": "MyHtttpServer\\Endponts\\UserProfileEndpoint.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T17:26:02.279Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "dbo.users [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/localhost/testDB/sa/SqlTable/dbo.users.sql",
-              "ToolTip": "dbo.users [\u0414\u0430\u043D\u043D\u044B\u0435]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-01-08T16:34:04.311Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AppConfig.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\Configuration\\AppConfig.cs",
-              "RelativeDocumentMoniker": "HttpServerLibrary\\Configuration\\AppConfig.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\Configuration\\AppConfig.cs",
-              "RelativeToolTip": "HttpServerLibrary\\Configuration\\AppConfig.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T11:01:06.606Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "config.json",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\config.json",
-              "RelativeDocumentMoniker": "MyHtttpServer\\config.json",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\config.json",
-              "RelativeToolTip": "MyHtttpServer\\config.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-08T12:04:32.911Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BaseEndpoint.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\Core\\BaseEndpoint.cs",
-              "RelativeDocumentMoniker": "HttpServerLibrary\\Core\\BaseEndpoint.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\Core\\BaseEndpoint.cs",
-              "RelativeToolTip": "HttpServerLibrary\\Core\\BaseEndpoint.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T16:58:07.458Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "HttpRequestContext.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\Core\\HttpRequestContext.cs",
-              "RelativeDocumentMoniker": "HttpServerLibrary\\Core\\HttpRequestContext.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\Core\\HttpRequestContext.cs",
-              "RelativeToolTip": "HttpServerLibrary\\Core\\HttpRequestContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T16:58:08.713Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "unathorizated.html",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Templates\\Pages\\unathorizated.html",
-              "RelativeDocumentMoniker": "MyHtttpServer\\Templates\\Pages\\unathorizated.html",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\MyHtttpServer\\Templates\\Pages\\unathorizated.html",
-              "RelativeToolTip": "MyHtttpServer\\Templates\\Pages\\unathorizated.html",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADEAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-01-07T18:23:26.249Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IHttpResponseResult.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\HttpResponse\\IHttpResponseResult.cs",
-              "RelativeDocumentMoniker": "HttpServerLibrary\\HttpResponse\\IHttpResponseResult.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\HttpResponse\\IHttpResponseResult.cs",
-              "RelativeToolTip": "HttpServerLibrary\\HttpResponse\\IHttpResponseResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T16:57:46.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Handler.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\Handlers\\Handler.cs",
-              "RelativeDocumentMoniker": "HttpServerLibrary\\Handlers\\Handler.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\Handlers\\Handler.cs",
-              "RelativeToolTip": "HttpServerLibrary\\Handlers\\Handler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T16:58:33.039Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "RedirectResult.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\HttpResponse\\RedirectResult.cs",
-              "RelativeDocumentMoniker": "HttpServerLibrary\\HttpResponse\\RedirectResult.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\HttpResponse\\RedirectResult.cs",
-              "RelativeToolTip": "HttpServerLibrary\\HttpResponse\\RedirectResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T16:57:43.185Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "HtmlResult.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\HttpResponse\\HtmlResult.cs",
-              "RelativeDocumentMoniker": "HttpServerLibrary\\HttpResponse\\HtmlResult.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\\u041D\u043E\u0432\u0430\u044F \u043F\u0430\u043F\u043A\u0430\\almostReady\\semestr_ORIS\\semestr_oris\\HttpServerLibrary\\HttpResponse\\HtmlResult.cs",
-              "RelativeToolTip": "HttpServerLibrary\\HttpResponse\\HtmlResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T16:57:41.227Z"
+              "WhenOpened": "2025-01-11T08:33:31.681Z"
             }
           ]
         }

@@ -9,7 +9,7 @@
 <body>
 <header>
     <div class="header-container">
-        <a class="template-logo">
+        <a class="template-logo" href="movies">
             <img src="images/logo-amediateka.png">
         </a>
         <h1 class="tittle-text">
@@ -39,84 +39,151 @@
                         <label class="Panel_label"></label>
                     </div>
                     <div class="Panel-inputWrapper">
-                        <input type="email" name="descriptrion" class="Panel_input" value="" placeholder="Описание">
+                        <input type="text" name="description" class="Panel_input" value="" placeholder="Описание">
                         <label class="Panel_label"></label>
                     </div>
                     <div class="Panel-inputWrapper">
-                        <input type="email" name="descrtiptionCard" class="Panel_input" value="" placeholder="Описание карточки">
+                        <input type="text" name="descrtiptionCard" class="Panel_input" value="" placeholder="Описание карточки">
                         <label class="Panel_label"></label>
                     </div>
                     <div class="Panel-inputWrapper">
-                        <input type="email" name="year" class="Panel_input" value="" placeholder="Год">
+                        <input type="text" name="year" class="Panel_input" value="" placeholder="Год">
                         <label class="Panel_label"></label>
                     </div>
                     <div class="Panel-inputWrapper">
-                        <input type="email" name="rating" class="Panel_input" value="" placeholder="Ограничение на возраст">
+                        <input type="text" name="rating" class="Panel_input" value="" placeholder="Ограничение по возрасту">
                         <label class="Panel_label"></label>
                     </div>
                     <div class="Panel-inputWrapper">
-                        <input type="email" name="ratindIMDB" class="Panel_input" value="" placeholder="Рейтинг IMDB">
+                        <input type="text" name="ratindIMDB" class="Panel_input" value="" placeholder="Рейтинг IMDB">
                         <label class="Panel_label"></label>
                     </div>
                     <div class="Panel-inputWrapper">
-                        <input type="email" name="ratingAmediateka" class="Panel_input" value="" placeholder="Рейтинг Амедиатеки">
+                        <input type="text" name="ratingAmediateka" class="Panel_input" value="" placeholder="Рейтинг Амедиатеки">
                         <label class="Panel_label"></label>
                     </div>
                     <div class="Panel-inputWrapper">
-                        <input type="email" name="posterUrl" class="Panel_input" value="" placeholder="Ссылка на постер">
+                        <input type="text" name="posterUrl" class="Panel_input" value="" placeholder="Ссылка на постер">
                         <label class="Panel_label"></label>
                     </div>
                     <div class="Panel-inputWrapper">
-                        <input type="email" name="bgUrl" class="Panel_input" value="" placeholder="Ссылка на задний фон">
+                        <input type="text" name="bgUrl" class="Panel_input" value="" placeholder="Ссылка на задний фон">
                         <label class="Panel_label"></label>
                     </div>
                     <div class="Panel-inputWrapper">
-                        <input type="email" name="logoUrl" class="Panel_input" value="" placeholder="Ссылка на лого фильма">
+                        <input type="text" name="logoUrl" class="Panel_input" value="" placeholder="Ссылка на лого фильма">
                         <label class="Panel_label"></label>
                     </div>
                     <div class="Panel-inputWrapper">
-                        <input type="email" name="genres" class="Panel_input" value="" placeholder="Жанры">
+                        <input type="text" name="genres" class="Panel_input" value="" placeholder="Жанры">
                         <label class="Panel_label"></label>
                     </div>
                     <div class="Panel-inputWrapper">
-                        <input type="email" name="country" class="Panel_input" value="" placeholder="Страна">
+                        <input type="text" name="country" class="Panel_input" value="" placeholder="Страна">
+                        <label class="Panel_label"></label>
+                    </div>
+                    <div class="Panel-inputWrapper">
+                        <input type="text" name="url_film" class="Panel_input" value="" placeholder="Ссылка на трейлер">
                         <label class="Panel_label"></label>
                     </div>
                 </div>
                 <div style="position: relative; align-items: center; justify-content: space-between; margin-top: 22px; width: 100%">
-                    <form id="actionForm" action="/your-endpoint" method="POST">
-                        <input type="hidden" name="_method" value="POST" id="methodField">
-                        <button type="button" class="template-button" style="margin-right: 15%; margin-left: 10%" onclick="submitForm('POST')">Добавить</button>
-                        <button type="button" class="template-button" style="margin-right: 15%" onclick="submitForm('UPDATE')">Изменить</button>
-                        <button type="button" class="template-button" onclick="submitForm('DELETE')">Удалить</button>
+                    <form id="actionForm">
+                        <input type="hidden" id="methodField">
+                        <button type="button" class="template-button" style="margin-right: 26%; margin-left: 20%" onclick="addMovie()">
+                            Добавить
+                        </button>
+                        .
+                        <button type="button" class="template-button" style="margin-right: 20%" onclick="removeMovie()">
+                            Удалить
+                        </button>
                     </form>
                 </div>
                 <script>
-                    function submitForm(method) {
-                        const form = document.getElementById('actionForm');
-                        const methodField = document.getElementById('methodField');
-                        const emailField = document.getElementById('emailField');
-                        const descriptrionField = document.getElementById('descriptrion');
-                        const descriptrionCardField = document.getElementById('descrtiptionCard');
-                        const yearField = document.getElementById('emailField');
-                        const ratingField = document.getElementById('emailField');
-                        const ratingIMDBField = document.getElementById('emailField');
-                        const ratingAmediatekaField = document.getElementById('emailField');
-                        const posterUrlField = document.getElementById('emailField');
-                        const bgUrlField = document.getElementById('emailField');
-                        const logoUrlField = document.getElementById('emailField');
-                        const genresField = document.getElementById('emailField');
-                        const countryField = document.getElementById('emailField');
-                        // Получение значения из поля Email
-                        const emailInput = document.getElementById('emailInput');
-                        emailField.value = emailInput.value;
+                    
+                    function addMovie() {
+                        // Получаем все поля ввода 
+                        const title = document.getElementById('title').value;
+                        const description = document.querySelector('input[name="description"]').value;
+                        const descriptionCard = document.querySelector('input[name="descrtiptionCard"]').value;
+                        const year = document.querySelector('input[name="year"]').value;
+                        const rating = document.querySelector('input[name="rating"]').value;
+                        const ratindIMDB = document.querySelector('input[name="ratindIMDB"]').value;
+                        const ratingAmediateka = document.querySelector('input[name="ratingAmediateka"]').value;
+                        const posterUrl = document.querySelector('input[name="posterUrl"]').value;
+                        const bgUrl = document.querySelector('input[name="bgUrl"]').value;
+                        const logoUrl = document.querySelector('input[name="logoUrl"]').value;
+                        const genres = document.querySelector('input[name="genres"]').value;
+                        const country = document.querySelector('input[name="country"]').value;
+                        const url_film = document.querySelector('input[name="url_film"]').value;
 
-                        // Установка метода
+                        // Проверяем, что все поля заполнены 
+                        if (!title || !description || !descriptionCard || !year || !rating || !ratindIMDB || !ratingAmediateka ||
+                            !posterUrl || !bgUrl || !logoUrl || !genres || !country || !url_film) {
+                            alert("Пожалуйста, заполните все поля для добавления фильма.");
+                            return; // Прерываем выполнение, если какое-то поле не заполнено 
+                        }
+
+                        // Создаем объект с данными фильма 
+                        const movieData = {
+                            title: title,
+                            description: description,
+                            descriptionCard: descriptionCard,
+                            year: year,
+                            rating: rating,
+                            ratindIMDB: ratindIMDB,
+                            ratingAmediateka: ratingAmediateka,
+                            posterUrl: posterUrl,
+                            bgUrl: bgUrl,
+                            logoUrl: logoUrl,
+                            genres: genres,
+                            country: country,
+                            url_film: url_film
+                        };
+
+                        sendData(movieData, 'POST')
+                    }
+
+                    function removeMovie() {
+                        // Получаем только название фильма для удаления 
+                        const title = document.getElementById('title').value;
+
+                        if (!title) {
+                            alert("Пожалуйста, введите название фильма для удаления.");
+                            return; // Прерываем выполнение, если название не введено 
+                        }
+
+                        sendData({ title: title }, 'DELETE')
+
+                    }
+                    async function sendData(data, method) {
+                        const methodField = document.getElementById('methodField');
                         methodField.value = method;
 
-                        // Отправка формы
-                        form.submit();
+                        try {
+                            const response = await fetch('/admin/handleMovies', { 
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                    'X-HTTP-Method-Override': method
+                                },
+                                body: JSON.stringify(data)
+                            });
+
+                            if (response.ok) {
+                                const result = await response.json();
+                                console.log('Успешно:', result);
+                                alert("Успешно!");
+                            } else {
+                                console.error('Ошибка:', response.status, response.statusText);
+                                alert("Произошла ошибка!");
+                            }
+                        } catch (error) {
+                            console.error('Ошибка при запросе:', error);
+                            alert("Произошла ошибка!");
+                        }
                     }
+
                 </script>
             </div>
         </div>

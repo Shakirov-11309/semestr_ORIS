@@ -1,10 +1,12 @@
 ﻿using Models;
+using MyHttttpServer.Models;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.IO;
 using System.Linq.Expressions;
 using System.Reflection;
+using System.Reflection.Metadata;
 using TemplateEngine.Models;
 
 namespace MyORMLibrary;
@@ -26,7 +28,7 @@ public class ORMContext<T> where T : class, new()
         var columns = string.Join(", ", properties.Select(p => p.Name));
         var values = string.Join(", ", properties.Select(p => "@" + p.Name));
 
-        var query = $"INSERT INTO {typeof(T).Name}s ({columns}) VALUES ({values})";
+        var query = $"INSERT INTO {typeof(T).Name} ({columns}) VALUES ({values})";
 
         using (var command = _dbConnection.CreateCommand())
         {
@@ -96,28 +98,34 @@ public class ORMContext<T> where T : class, new()
         }
         return entity;
     }
-    public T ReadByAll<T>() where T : class, new()
+    public IEnumerable<T> ReadByAll(string filter = null)
     {
-        var tableName = typeof(T).Name;
-        using (var connection = _dbConnection)
+        var result = new List<T>();
+        var tableName = typeof(T).Name + "s";
+        var sql = $"SELECT * FROM {tableName}";
+
+        if (!string.IsNullOrEmpty(filter))
         {
-            connection.Open();
-            string queryRequest = $"SELECT * FROM {tableName}";
-            using (var command = connection.CreateCommand())
-            {
-                command.CommandText = queryRequest;
-                using (var reader = command.ExecuteReader())
-                {
-                    if (reader.Read())
-                    {
-                        return MapToEntity<T>(reader);
-                    }
-                }
-                _dbConnection.Close();
-            }
+            sql += $" WHERE {filter}";
         }
 
-        return null;
+        using (var command = _dbConnection.CreateCommand())
+        {
+            command.CommandText = sql;
+            _dbConnection.Open();
+
+            using (var reader = command.ExecuteReader())
+            {
+                while (reader.Read())
+                {
+                    result.Add(Map(reader));
+                }
+            }
+
+            _dbConnection.Close();
+        }
+
+        return result;
     }
 
     public List<string> GetPosterUrl() 
@@ -164,6 +172,32 @@ public class ORMContext<T> where T : class, new()
             }
         }
         return null;
+    }
+
+    public bool CheckUserByValideAdmin(int? user_id)
+    {
+        using (var connection = _dbConnection)
+        {
+            connection.Open();
+            string queryRequest = $"SELECT is_admin FROM users WHERE id = @user_id";
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = queryRequest;
+                var parametr = command.CreateParameter();
+                parametr.ParameterName = "@user_id";
+                parametr.Value = user_id;
+                command.Parameters.Add(parametr);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        return reader.GetBoolean(0);
+                    }
+                }
+            }
+        }
+        return false;
     }
 
     public T ReadByName<T>(string Name) where T : class, new()
@@ -225,15 +259,15 @@ public class ORMContext<T> where T : class, new()
         }
     }
 
-    public void Delete(int id)
+    public void Delete(string title)
     {
-        var query = $"DELETE FROM {typeof(T).Name}s WHERE Id = @id";
+        var query = $"DELETE FROM {typeof(T).Name}s WHERE title = @title";
         using (var command = _dbConnection.CreateCommand())
         {
             command.CommandText = query;
             var parametr = command.CreateParameter();
             parametr.ParameterName = "@id";
-            parametr.Value = id;
+            parametr.Value = title;
             command.Parameters.Add(parametr);
 
             _dbConnection.Open();
@@ -414,7 +448,7 @@ public class ORMContext<T> where T : class, new()
     public List<Movies> GetMovies() 
     {
         var result = new List<Movies>();
-        string query = "SELECT id, card_url, poster_url, amediateka_rating, rating, release_year, description_card, title, bg_url, genre FROM movies";
+        string query = "SELECT id, card_url, poster_url, amediateka_rating, rating, release_year, description_card, title, bg_url, genre, url_film FROM movies";
         using (var command = _dbConnection.CreateCommand()) 
         {
             command.CommandText = query;
@@ -435,7 +469,7 @@ public class ORMContext<T> where T : class, new()
                         title = reader.GetString(7),
                         bg_url = reader.GetString(8),
                         genre = reader.GetString(9),
-
+                        url_film = reader.GetString(10)
                     };
                     result.Add(movies);
                 }

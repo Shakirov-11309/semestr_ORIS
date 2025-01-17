@@ -90,7 +90,7 @@ namespace MyHtttpServer.Core.Templator
                 <div class=""item-content-data-buttons"">
                     <button class=""button-in-card-watch"">
                         <img src=""images/play-button.svg"" style=""height: 16px; width: 16px; margin-right: calc(10px/1.08)"">
-                        Смотреть
+                        <a style=""color:black"" href=""watch?filmId={movies.Id}"">Смотреть</a>
                     </button>
                     <button type=""button"" class=""button-in-card-add"">
                         <img src=""images/add-button.svg"" style=""height: 16px; width: 16px; margin-right: calc(10px/1.08)"">
@@ -117,6 +117,7 @@ namespace MyHtttpServer.Core.Templator
             template = template.Replace("{{directorId}}", directors.name);
             template = template.Replace("{{countries}}", countries.name);
             template = template.Replace("{{genres}}", genres.name);
+            template = template.Replace("{{url_film}}", movies.url_film);
             return template;
         }
     }

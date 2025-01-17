@@ -20,10 +20,10 @@ namespace HttpServerLibrary
         /// </summary>
         /// <param name="context"></param>
         public override void HandleRequest(HttpRequestContext context)
+        
         {
             bool IsGet = context.Request.HttpMethod.Equals("Get", StringComparison.OrdinalIgnoreCase);
             string[] arr = context.Request.Url?.AbsolutePath.Split('/');
-            //bool IsFile = arr.Length == 2;
             var link = arr[arr.Length - 1];
 
             bool IsFile = link.Contains('.');
@@ -35,12 +35,13 @@ namespace HttpServerLibrary
                 string filePath = Path.Combine(_staticDirectoryPath, string.IsNullOrEmpty(relativePath) ? "index.html" : relativePath);
 
 
-                //if (!File.Exists(filePath))
-                //{
-                //    // TODO: Если нет файла "404.html" отправлять просто статус код и текст
-                //    filePath = Path.Combine(_staticDirectoryPath, "404.html");
-                //    context.Response.StatusCode = (int)HttpStatusCode.NotFound;
-                //}
+                if (!File.Exists(filePath))
+                {
+                    // TODO: Если нет файла "404.html" отправлять просто статус код и текст
+                    filePath = Path.Combine(_staticDirectoryPath, "404.html");
+                    context.Response.StatusCode = (int)HttpStatusCode.NotFound;
+                    Console.WriteLine($"Сервер: Status => {(int)HttpStatusCode.NotFound}");
+                }
                 try
                 {
                     byte[] responseFile = File.ReadAllBytes(filePath);

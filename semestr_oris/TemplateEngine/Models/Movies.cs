@@ -33,5 +33,7 @@ namespace Models
         public string genre { get; set; }
 
         public string country { get; set; }
+
+        public string url_film { get; set; }
     }
 }

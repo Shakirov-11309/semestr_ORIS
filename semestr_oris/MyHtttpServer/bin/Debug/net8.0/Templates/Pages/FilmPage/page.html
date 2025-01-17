@@ -37,12 +37,12 @@
                 <a style="margin: 0 2px; color:#868fa0; cursor: default;">/</a>
                 <a class="choice-category" href="movies">Фильмы</a>
                 <a style="margin: 0 2px; color:#868fa0; cursor: default;">/</a>
-                <a class="choice-category" href="films/fantasy">{{genres}}</a>
+                <a class="choice-category" href="">{{genres}}</a>
                 <a style="margin: 0 2px; color:#868fa0; cursor: default;">/</a>
                 <a class="selected-category">{{Title}}</a>
             </div>
-            <div class="c">
-                <img src="{{Logo}}">
+            <div class="MovieWrapper-logo">
+                <img src="{{Logo}}" class="MovieWrapper-logo">
             </div>
             <div class="MovieWrapper-Tittle">
                 <div class="MovieWrapper-Original-Tittle">{{Title}}</div>
@@ -55,7 +55,7 @@
                 <div class="MovieWrapper_Header_Buttons">
                     <button class="MovieWrapper_Header_Button-Watch">
                         <img src="images/play-button.svg" style="margin-right: 16px">
-                        Смотреть
+                        <a href="{{url_film}}" style="color: black">Смотреть</a>
                     </button>
                     <div class="MovieWrapper_Header_ServiceButtons">
                         <button class="MovieWrapper_Header_Button-Favourite">
@@ -138,6 +138,7 @@
             </div>
             <script>
                 const slideBarCatalog = document.getElementsByClassName("Movies-SlideBar-Wrapper")[0];
+
                 async function loadFilm() {
                     const response = await fetch('watch/all');
                     const movieTemplates = await response.json();

@@ -47,12 +47,7 @@ namespace MyHtttpServer.Endponts
 
         public List<string> PutDataToTemplate(List<Movies> movies)
         {
-            var result = new List<string>();
-            foreach (var movie in movies)
-            {
-                result.Add(CustomTemplator.GetHtmlByTemplateCardData(movie));
-            }
-            return result;
+            return movies.Select(CustomTemplator.GetHtmlByTemplateCardData).ToList();
         }
     }
 }

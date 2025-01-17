@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/scrtipt.js"></script>
     <title>Смотреть фильмы в хорошем качестве без рекламы — Amediatekа</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <header class="menu">
@@ -334,7 +335,7 @@
         let isLoading = false;
         let loadedMovies = 0;
 
-        async function handleScroll() {
+        function handleScroll() {
             if (isLoading) return;
             const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
 
@@ -348,23 +349,31 @@
             }
         }
 
-        async function loadMovies()
-        {
-            const response = await fetch('movies/all')
-            const movieTemplates = await response.json();
+        function loadMovies() {
+            const xhr = new XMLHttpRequest();
+            xhr.open('GET', 'movies/all', true); // Замените URL на ваш реальный эндпоинт
 
-            movieTemplates.forEach(template => {
-                const card = document.createElement('form');
-                card.className = "item-cataloge";
-                card.method = "get";
-                card.action = "";
-                card.innerHTML = template;
-                catalog.appendChild(card)
-            })
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    const movieTemplates = JSON.parse(xhr.responseText);
+
+                    movieTemplates.forEach(template => {
+                        const card = document.createElement('form');
+                        card.className = "item-cataloge";
+                        card.method = "get";
+                        card.action = "";
+                        card.innerHTML = template;
+                        catalog.appendChild(card);
+                    });
+                }
+            };
+
+            xhr.send();
         }
 
         document.addEventListener('scroll', handleScroll);
         loadMovies();
+
     </script>
 </main>
 <footer>
